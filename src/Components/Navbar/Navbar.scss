@@ -1,0 +1,34 @@
+.nav-container{
+    height: 105px;
+    width: 100%;
+    padding: 0 50px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.green-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    .flex-boxes{
+        display: flex;
+        gap: 1rem;
+        .box{
+            height: 85px;
+            width: 85px;
+            background-color: #00A859;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            justify-content: center;
+            flex-direction: column;
+            div{
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+}
