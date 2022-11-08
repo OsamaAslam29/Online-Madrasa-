@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Home.scss";
+import "./Slider.scss";
 
 import home from "../../Assets/home.svg";
 
@@ -34,7 +34,7 @@ const arr = [
     heading: "Ipsum",
   },
 ];
-const Home = () => {
+const HomeSlider = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -52,10 +52,10 @@ const Home = () => {
         {arr.map((data, i) => {
           return (
             <div className="slide_parent" key={i}>
-              <div>
-                <img src={data.img} alt="Icons" />
-              </div>
-              <div className="text">{data.heading}</div>
+                <div>
+                  <img src={data.img} alt="Icons" />
+                </div>
+                <div className="text">{data.heading}</div>
             </div>
           );
         })}
@@ -64,4 +64,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeSlider;

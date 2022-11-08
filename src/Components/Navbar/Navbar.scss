@@ -12,6 +12,7 @@
     justify-content: center;
     position: absolute;
     top: 60px;
+    z-index: 100;
     .flex-boxes{
         display: flex;
         gap: 1rem;
