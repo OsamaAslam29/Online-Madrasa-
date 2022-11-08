@@ -1,0 +1,40 @@
+.contact-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A859;
+    @media only screen and (max-width: 1200px) {
+        height: 7vh;
+    }
+    @media only screen and (max-width: 990px) {
+        height: 7vh;
+    }
+    @media only screen and (max-width: 700px) {
+        height: 7vh;
+    }
+    @media only screen and (max-width: 500px) {
+        height: 5vh;
+    }
+
+    h5 {
+        color: white;
+        font-weight: 400;
+        font-size: 28px;
+        @media only screen and (max-width: 1400px) {
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 1200px) {
+            font-size: 23px;
+        }
+        @media only screen and (max-width: 990px) {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 700px) {
+            font-size: 17px;
+        }
+        @media only screen and (max-width: 500px) {
+            font-size: 15px;
+        }
+    }
+}
