@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from 'react-slick';
 import './App.scss';
 import Cards from './Components/Cards/Cards';
 import Contact from './Components/Contact us/Contact';
