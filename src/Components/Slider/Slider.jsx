@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Slider.scss";
-
 import home from "../../Assets/home.svg";
 
 const arr = [
@@ -11,27 +10,19 @@ const arr = [
   },
   {
     img: home,
-    heading: "Lorem",
+    heading: "Lorem Ipsum",
   },
   {
     img: home,
-    heading: "Ipsum",
+    heading: "Lorem Ipsum",
   },
   {
     img: home,
-    heading: "Ipsum",
+    heading: "Lorem Ipsum",
   },
   {
     img: home,
-    heading: "Lorem",
-  },
-  {
-    img: home,
-    heading: "Ipsum",
-  },
-  {
-    img: home,
-    heading: "Ipsum",
+    heading: "Lorem Ipsum",
   },
 ];
 const HomeSlider = () => {
