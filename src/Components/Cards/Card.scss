@@ -1,8 +1,8 @@
 .card-container {
-    padding: 70px;
+    padding: 150px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10rem 0rem;
+    gap: 15rem;
     @media screen and (max-width:990px) {
         padding: 70px 30px;
     }
@@ -58,7 +58,7 @@
         }
 
         .card {
-            max-width: 280px;
+            max-width: 300px;
             text-align: center;
             position: relative;
             padding: 100px 20px 50px 20px;
@@ -81,12 +81,13 @@
 
             .img {
                 position: absolute;
-                top: -110px;
-                left: 48px;
+                top: -125px;
+                left: 45px;
                 border: 2px dotted #00A859;
                 border-radius: 20px;
                 padding: 15px;
-                width: 185px;
+                width: 200px;
+                height: 200px;
                 @media screen and (max-width:1400px) {
                     width: 170px;
                 }
@@ -116,7 +117,7 @@
 
                 span {
                     font-weight: 400;
-                    font-size: 15px;
+                    font-size: 13px;
                 }
             }
 

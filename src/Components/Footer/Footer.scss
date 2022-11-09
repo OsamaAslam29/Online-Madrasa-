@@ -1,7 +1,7 @@
 .footer-container {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Image.jpg');
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Image.jpg');
+    // background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -14,13 +14,14 @@
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        padding-top: 5rem;
+        padding-top: 6rem;
 
         .text {
             font-weight: 400;
             font-size: 24px;
             color: white;
             text-align: center;
+            line-height: 40px;
         }
     }
 
@@ -47,7 +48,7 @@
 
             input {
                 width: 500px;
-                padding: 3px 20px;
+                padding: 5px 20px;
                 border-radius: 10px;
                 background: rgba(255, 255, 255, 0.5);
 
@@ -60,10 +61,10 @@
             button {
                 background-color: #00A859;
                 color: white;
-                padding: 3px 20px;
+                padding: 5px 20px;
                 border-radius: 10px;
                 position: absolute;
-                top: 2px;
+                top: 0px;
                 right: 0;
             }
         }
@@ -85,7 +86,7 @@
                 flex-direction: column;
                 gap: .5rem;
                 h5{
-                    font-size: 20px;
+                    font-size: 22px;
                     color: white;
                     font-weight: 700;
                 }
@@ -99,6 +100,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
+                font-size: 20px;
                 .icons{
                     padding-top: 10px;
                     display: flex;

@@ -1,0 +1,32 @@
+.Image-card-container {
+    .cards {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+
+        .img-card {
+            padding: 35px 40px;
+            max-width: 335px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
+            border-radius: 40px;
+            display: flex;
+            gap: 1.5rem;
+            flex-direction: column;
+
+            .bio {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h5 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
