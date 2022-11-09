@@ -3,8 +3,7 @@ import './ImageCard.scss'
 import mission from '../../Assets/mission.png'
 import vision from '../../Assets/vision.png'
 import goal from '../../Assets/goal.png'
-import large from '../../Assets/large.jpg'
-import small from '../../Assets/small.jpg'
+
 
 const ImageCard = () => {
     return (

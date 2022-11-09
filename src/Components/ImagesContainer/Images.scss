@@ -54,10 +54,18 @@
             position: relative;
             width: 444px;
             z-index: -999;
+            img{
+                width: 500px;
+                height: 600px;
+            }
             .small{
                 position: absolute;
-                left: 15rem;
+                left: 20rem;
                 bottom: 6rem;
+                img{
+                    width: 500px;
+                    height: 394px;
+                }
                 
 
             }
