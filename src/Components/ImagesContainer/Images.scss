@@ -41,3 +41,28 @@
         }
     }
 }
+
+
+.images__main{
+    position: relative;
+    padding-top: 4rem;
+    padding-left: 15rem;
+    .absolute__images{
+        // position: absolute;
+        margin-bottom: -13rem;
+        .large{
+            position: relative;
+            width: 444px;
+            z-index: -999;
+            .small{
+                position: absolute;
+                left: 15rem;
+                bottom: 6rem;
+                
+
+            }
+        }
+    }
+
+    
+}
