@@ -10,45 +10,50 @@ import six from '../../Assets/six.png'
 import seven from '../../Assets/seven.png'
 const Navbar = () => {
   return (
-    <div className="nav-container">
-      <div className='navbar'>
-        <div className="logo">
-          <img src={logo} alt="" />
+    <>
+      
+        <div className="nav-container">
+          <div className='navbar'>
+            <div className="logo">
+              <img src={logo} alt="" />
+            </div>
+          </div>
+          <div className="green-box">
+            <div className="flex-boxes">
+              <div className="box">
+                <img src={one} alt="" />
+                <div>One</div>
+              </div>
+              <div className="box">
+                <img src={two} alt="" />
+                <div>Two</div>
+              </div>
+              <div className="box">
+                <img src={three} alt="" />
+                <div>Three</div>
+              </div>
+              <div className="box">
+                <img src={four} alt="" />
+                <div>Four</div>
+              </div>
+              <div className="box">
+                <img src={five} alt="" />
+                <div>Five</div>
+              </div>
+              <div className="box">
+                <img src={six} alt="" />
+                <div>Six</div>
+              </div>
+              <div className="box">
+                <img src={seven} alt="" />
+                <div>Seven</div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> 
-      <div className="green-box">
-        <div className="flex-boxes">
-          <div className="box">
-            <img src={one} alt="" />
-            <div>One</div>
-          </div>
-          <div className="box">
-            <img src={two} alt="" />
-            <div>Two</div>
-          </div>
-          <div className="box">
-            <img src={three} alt="" />
-            <div>Three</div>
-          </div>
-          <div className="box">
-            <img src={four} alt="" />
-            <div>Four</div>
-          </div>
-          <div className="box">
-            <img src={five} alt="" />
-            <div>Five</div>
-          </div>
-          <div className="box">
-            <img src={six} alt="" />
-            <div>Six</div>
-          </div>
-          <div className="box">
-            <img src={seven} alt="" />
-            <div>Seven</div>
-          </div>
-        </div>
-      </div>
-    </div>
+      
+    </>
+
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Subscribe.scss'
 import sub from '../../Assets/subscribe.png'
+import Fade from 'react-reveal/Fade';
 const Subscribe = () => {
     return (
         <div className='subscribe-container'>
@@ -9,7 +10,9 @@ const Subscribe = () => {
             </div>
             <div className="right-container">
                 <div className="flex-sub-sect">
-                    <div className="content">Subscribe Us</div>
+                    <Fade top>
+                        <div className="content">Subscribe Us</div>
+                    </Fade>
                     <input className='input-field' type="text" placeholder='Email:' />
                     <button className='send-button'>Send</button>
                 </div>

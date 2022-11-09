@@ -1,7 +1,9 @@
 .card-container {
+    background:url('../../Assets/stars.png');
     padding: 150px 20px;
     display: flex;
     flex-direction: column;
+    background-size: 100% 100%;
     gap: 15rem;
     @media screen and (max-width:990px) {
         padding: 70px 30px;

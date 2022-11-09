@@ -15,7 +15,7 @@ const Cards = () => {
             </div>
             <div className="cards">
                 <div class="card">
-                    <div className="img" >
+                    <div className="img">
                         <img src={card} style={{ width: "100%" }} />
                     </div>
                     <div className="bio">
