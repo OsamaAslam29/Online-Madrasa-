@@ -9,7 +9,7 @@ const Subscribe = () => {
             </div>
             <div className="right-container">
                 <div className="flex-sub-sect">
-                <div className="content">Subscribe Us</div>
+                    <div className="content">Subscribe Us</div>
                     <input className='input-field' type="text" placeholder='Email:' />
                     <button className='send-button'>Send</button>
                 </div>

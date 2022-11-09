@@ -1,10 +1,11 @@
 .footer-container {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('http://onlinequranlearningcenter.com/wp-content/uploads/2022/08/938430448-Ornamental-Arabic-lantern-with-burning-candle-glowing-at-night-and-glittering-golden-bokeh-lights.-Festive-greeting-card-invitation-for-Muslim-holy-month-Ramadan-Kareem-1-1.jpg)');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Image.jpg');
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+
 
     .flex-footer {
         width: 100%;
@@ -13,7 +14,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
 
         .text {
             font-weight: 400;
@@ -45,23 +46,64 @@
             // width: ;
 
             input {
-                width: 420px;
+                width: 500px;
                 padding: 3px 20px;
                 border-radius: 10px;
                 background: rgba(255, 255, 255, 0.5);
-                
+
             }
+
             ::placeholder {
                 color: white;
-              }
-            button{
+            }
+
+            button {
                 background-color: #00A859;
                 color: white;
                 padding: 3px 20px;
                 border-radius: 10px;
                 position: absolute;
-                top: 1px;
+                top: 2px;
                 right: 0;
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+        flex-wrap: wrap;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                h5{
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 700;
+                }
+                img{
+                    width: 70px;
+                }
+                
+            }
+            .data{
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                .icons{
+                    padding-top: 10px;
+                    display: flex;
+                    gap: 1rem;
+                }
             }
         }
     }
