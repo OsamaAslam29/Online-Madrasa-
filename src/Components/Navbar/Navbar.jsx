@@ -16,14 +16,11 @@ const Navbar = () => {
 
 
       <div className="nav-container">
-        <div className='navbar'>
           <Fade top>
             <div className="logo">
               <img src={logo} alt="" />
             </div>
           </Fade>
-
-        </div>
         <Fade top>
         <div className="green-box">
           <div className="flex-boxes">

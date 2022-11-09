@@ -12,14 +12,14 @@ import Subscribe from './Components/Subscribe/Subscribe'
 function App() {
   return (
     <>
-      <Navbar/>
-      <MainSlider/>
-      <Images/>
-       <Subscribe/>
-      <Cards/>
-      <Contact/>
+      <Navbar />
+      <MainSlider />
+      <Images />
+      <Subscribe />
+      <Cards />
+      <Contact />
       <Footer />
-      
+
     </>
   );
 }

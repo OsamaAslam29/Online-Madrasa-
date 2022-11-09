@@ -1,34 +1,76 @@
-.nav-container{
+.nav-container {
     height: 105px;
     width: 100%;
     padding: 0 50px;
     display: flex;
     align-items: center;
     position: relative;
-}
-.green-box{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 60px;
-    z-index: 100;
-    .flex-boxes{
+    @media screen and (max-width:1400px) {
+        padding: 0 40px;
+        height: 95px;
+    }
+    @media screen and (max-width: 990px) {
+        padding: 0 30px;
+        height: 85px;
+    }
+    @media screen and (max-width: 700px) {
+        padding: 0 20px;
+        height: 75px;
+    }
+    .logo{
+        img{
+            @media screen and (max-width: 1400px) {
+                height: 60px;
+            }
+            @media screen and (max-width: 990px) {
+                height: 50px;
+            }
+            @media screen and (max-width: 700px) {
+                height: 40px;
+            }
+        }
+    }
+
+    .green-box {
+        width: 100%;
         display: flex;
-        gap: 1rem;
-        .box{
-            height: 100px;
-            width: 100px;
-            background-color: #00A859;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        z-index: 100;
+    
+        .flex-boxes {
             display: flex;
-            align-items: center;
-            gap: 7px;
-            justify-content: center;
-            flex-direction: column;
-            div{
-                color: white;
-                font-size: 18px;
+            gap: 1rem;
+            @media screen and (max-width:1400px) {
+                gap: .5rem;
+            }
+            @media screen and (max-width:990px) {
+                display: none;
+            }
+    
+            .box {
+                height: 100px;
+                width: 100px;
+                background-color: #00A859;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                justify-content: center;
+                flex-direction: column;
+    
+                @media screen and (max-width:1400px) {
+                    height: 85px;
+                    width: 85px;
+                    gap: 5px;
+                }
+    
+                div {
+                    color: white;
+                    font-size: 18px;
+                }
             }
         }
     }
 }
+

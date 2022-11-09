@@ -7,8 +7,23 @@
     padding: 1rem 3rem;
     flex-wrap: wrap;
 
+    @media screen and (max-width:1400px) {
+        gap: 15rem;
+    }
+    @media screen and (max-width:1200px) {
+        gap: 10rem;
+    }
     @media screen and (max-width:990px) {
-        gap: 5rem;
+        gap: 7rem;
+    }
+    @media screen and (max-width:705px) {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+    @media screen and (max-width:500px) {
+        gap: 2rem;
+       
     }
 
     .left-container {
@@ -22,7 +37,13 @@
             }
 
             @media screen and (max-width:990px) {
-                height: 270px;
+                height: 260px;
+            }
+            @media screen and (max-width:705px) {
+                height: 240px;
+            }
+            @media screen and (max-width:500px) {
+                height: 200px;
             }
         }
 
