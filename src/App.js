@@ -1,16 +1,24 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './App.scss';
-import Home from './Components/Home/Home';
+import Cards from './Components/Cards/Cards';
+import Contact from './Components/Contact us/Contact';
+import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar'
 import MainSlider from './Components/Slider/MainSlider';
-import HomeSlider from './Components/Slider/Slider';
-// https://www.figma.com/file/uu1D1793s1wGMh4XxZiKAY/Madrasa.io?node-id=0%3A1
+import Subscribe from './Components/Subscribe/Subscribe'
+
+
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <HomeSlider/> */}
+      <Navbar/>
       <MainSlider/>
+      <Subscribe/>
+      <Cards/>
+      <Contact/>
+      <Footer />
+      
     </>
   );
 }

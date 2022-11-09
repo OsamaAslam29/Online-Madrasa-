@@ -2,7 +2,6 @@
     height: 105px;
     width: 100%;
     padding: 0 50px;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     position: relative;
@@ -13,6 +12,7 @@
     justify-content: center;
     position: absolute;
     top: 60px;
+    z-index: 100;
     .flex-boxes{
         display: flex;
         gap: 1rem;

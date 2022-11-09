@@ -43,10 +43,10 @@ const HomeSlider = () => {
         {arr.map((data, i) => {
           return (
             <div className="slide_parent" key={i}>
-              <div>
-                <img src={data.img} alt="Icons" />
-              </div>
-              <div className="text">{data.heading}</div>
+                <div>
+                  <img src={data.img} alt="Icons" />
+                </div>
+                <div className="text">{data.heading}</div>
             </div>
           );
         })}
