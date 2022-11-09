@@ -34,7 +34,7 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
   };
   return (

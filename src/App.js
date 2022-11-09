@@ -12,13 +12,13 @@ import Subscribe from './Components/Subscribe/Subscribe'
 function App() {
   return (
     <>
-      {/* <Navbar/>
-      <MainSlider/> */}
-      {/* <Images/> */}
-       {/* <Subscribe/> */}
+      <Navbar/>
+      <MainSlider/>
+      <Images/>
+       <Subscribe/>
       <Cards/>
-      {/*<Contact/> */}
-      {/* <Footer /> */}
+      <Contact/>
+      <Footer />
       
     </>
   );

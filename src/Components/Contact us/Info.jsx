@@ -4,12 +4,10 @@ import first from '../../Assets/first.png'
 import second from '../../Assets/second.png'
 import third from '../../Assets/third.png'
 import image from '../../Assets/image.png'
-import Contact from './Contact'
 
 const Info = () => {
     return (
         <>
-        {/* <Contact/> */}
         <div className='info-contanier'>
             <div className="info">
                 <div className="left-container">
@@ -60,7 +58,6 @@ const Info = () => {
                         <input type="text" placeholder='Phone:' />
                         <input type="text" placeholder='Email:' />
                         <button>Send</button>
-
                     </form>
                 </div>
             </div>
