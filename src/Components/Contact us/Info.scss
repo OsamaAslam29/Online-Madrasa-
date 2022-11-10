@@ -141,8 +141,9 @@
             background: #FFFFFF;
             box-shadow: 0px 4px 20px 2px rgba(39, 39, 39, 0.06);
             border-radius: 20px;
-            .icon{
-                img{
+
+            .icon {
+                img {
                     height: 70px;
                 }
             }
@@ -214,6 +215,7 @@
         @media screen and (max-width:1200px) {
             gap: 5rem;
         }
+
         @media screen and (max-width:990px) {
             gap: 2rem;
         }
@@ -224,12 +226,12 @@
         }
 
         .image {
-            
+
 
             iframe {
                 box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.1);
                 border-radius: 20px;
-                
+
                 @media screen and (max-width:1400px) {
                     width: 600px;
                     height: 400px;
@@ -244,12 +246,13 @@
                     height: 370px;
                     width: 450px;
                 }
+
                 @media screen and (max-width:910px) {
                     height: 370px;
                     width: 100%;
                 }
             }
-            
+
         }
 
         .message {
@@ -263,9 +266,11 @@
             @media screen and (max-width:1400px) {
                 padding: 0 30px;
             }
+
             @media screen and (max-width:1200px) {
                 padding: 0 20px;
             }
+
             @media screen and (max-width:910px) {
                 padding: 20px 20px;
                 justify-content: center;
@@ -296,6 +301,7 @@
                 @media screen and (max-width:1200px) {
                     gap: 1rem;
                 }
+
                 @media screen and (max-width:910px) {
                     width: 100%;
                 }
@@ -314,7 +320,7 @@
                     }
 
                     @media screen and (max-width:910px) {
-                                width: 100%;
+                        width: 100%;
                     }
 
                 }
@@ -336,14 +342,16 @@
                         font-size: 20px;
                         padding: 5px 8px;
                     }
+
                     @media screen and (max-width:910px) {
                         width: 100%;
                     }
 
                 }
-                button:hover{
+
+                button:hover {
                     background-color: #047540;
-                 }
+                }
             }
 
         }

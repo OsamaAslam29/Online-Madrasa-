@@ -3,7 +3,6 @@ import './Info.scss'
 import first from '../../Assets/first.png'
 import second from '../../Assets/second.png'
 import third from '../../Assets/third.png'
-import image from '../../Assets/image.png'
 
 const Info = () => {
     return (
