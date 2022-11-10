@@ -1,13 +1,43 @@
 .info-contanier {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 70px 40px;
+
+    @media screen and (max-width:1400px) {
+        padding: 50px 40px;
+    }
+
+    @media screen and (max-width:1200px) {
+        padding: 50px 30px;
+    }
+
+    @media screen and (max-width:990px) {
+        padding: 40px 30px;
+        gap: 2rem;
+    }
+
+    @media screen and (max-width:910px) {
+        padding: 40px 20px;
+    }
+
     .info {
         display: flex;
-        padding: 70px 0;
         justify-content: center;
         gap: 5rem;
-        flex-wrap: wrap;
 
-        @media screen and (max-width:1400px) {
-            padding: 40px 0;
+        @media screen and (max-width:1200px) {
+            gap: 4rem;
+        }
+
+        @media screen and (max-width:990px) {
+            gap: 3rem;
+        }
+
+        @media screen and (max-width:750px) {
+            flex-direction: column;
+            gap: 1rem;
         }
 
         .left-container {
@@ -15,11 +45,21 @@
                 font-size: 35px;
                 font-weight: 400;
                 line-height: 50px;
-                letter-spacing: 0em;
                 text-align: left;
 
                 @media screen and (max-width:1400px) {
                     font-size: 30px;
+                    line-height: 40px;
+                }
+
+                @media screen and (max-width:1200px) {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+
+                @media screen and (max-width:990px) {
+                    font-size: 20px;
+                    line-height: 25px;
                 }
 
                 span {
@@ -31,14 +71,40 @@
         .divider-line {
             border: 1px solid #F1B211;
             height: 90px;
+
+            @media screen and (max-width:1400px) {
+                height: 73px;
+            }
+
+            @media screen and (max-width:1200px) {
+                height: 58px;
+            }
+
+            @media screen and (max-width:990px) {
+                height: 50px;
+            }
+
+            @media screen and (max-width:750px) {
+                height: 2px;
+            }
         }
 
         .right-container {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
 
             @media screen and (max-width:1400px) {
                 font-size: 18px;
+
+            }
+
+            @media screen and (max-width:120px) {
+                font-size: 15px;
+
+            }
+
+            @media screen and (max-width:990px) {
+                font-size: 13px;
 
             }
         }
@@ -49,6 +115,22 @@
         justify-content: center;
         gap: 3.2rem;
         flex-wrap: wrap;
+
+        @media screen and (max-width:1400px) {
+            gap: 2.5rem;
+        }
+
+        @media screen and (max-width:1200px) {
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:990px) {
+            gap: 1rem;
+        }
+
+        @media screen and (max-width:910px) {
+            flex-direction: column;
+        }
 
         .card-data {
             padding: 50px 60px;
@@ -65,15 +147,16 @@
             }
 
             @media screen and (max-width:1200px) {
-                padding: 30px 40px;
+                padding: 30px 30px;
             }
 
             @media screen and (max-width:990px) {
-                padding: 25px 35px;
+                padding: 25px 30px;
             }
 
             .card-info {
                 line-height: 40px;
+
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
@@ -116,23 +199,48 @@
     .bio {
         display: flex;
         justify-content: center;
-        gap: 8rem;
-        padding: 100px 50px;
-        flex-wrap: wrap;
+        gap: 10rem;
+
+        // flex-wrap: wrap;
+        @media screen and (max-width:1400px) {
+            gap: 8rem;
+        }
+
+        @media screen and (max-width:1200px) {
+            gap: 5rem;
+        }
+        @media screen and (max-width:990px) {
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:910px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
 
         .image {
-            img {
-                width: 780px;
-                height: 470px;
+            
 
+            iframe {
+                box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
                 @media screen and (max-width:1400px) {
-                    height: 350px;
                     width: 600px;
+                    height: 400px;
                 }
 
                 @media screen and (max-width:1200px) {
-                    height: 350px;
+                    height: 370px;
+                    width: 480px;
+                }
+
+                @media screen and (max-width:990px) {
+                    height: 370px;
                     width: 450px;
+                }
+                @media screen and (max-width:910px) {
+                    height: 370px;
+                    width: 100%;
                 }
             }
         }
@@ -145,12 +253,27 @@
             box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
 
+            @media screen and (max-width:1400px) {
+                padding: 0 30px;
+            }
+            @media screen and (max-width:1200px) {
+                padding: 0 20px;
+            }
+            @media screen and (max-width:910px) {
+                padding: 20px 20px;
+                justify-content: center;
+            }
+
             h5 {
                 color: #F1B211;
                 text-align: center;
                 font-size: 27px;
                 font-weight: bold;
                 margin-bottom: 9px;
+
+                @media screen and (max-width:1200px) {
+                    font-size: 23px;
+                }
 
             }
 
@@ -163,6 +286,13 @@
                 flex-direction: column;
                 gap: 1.4rem;
 
+                @media screen and (max-width:1200px) {
+                    gap: 1rem;
+                }
+                @media screen and (max-width:910px) {
+                    width: 100%;
+                }
+
                 input {
                     width: 270px;
                     border: 1px solid #F1B211;
@@ -171,6 +301,15 @@
                     font-size: 18px;
                     font-weight: bold;
                     color: #00A859;
+
+                    @media screen and (max-width:1200px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width:910px) {
+                                width: 100%;
+                    }
+
                 }
 
                 button {
@@ -185,6 +324,14 @@
                     outline: none;
                     border: 1px solid #F1B211;
                     margin-top: 5px;
+
+                    @media screen and (max-width:1200px) {
+                        font-size: 20px;
+                        padding: 5px 8px;
+                    }
+                    @media screen and (max-width:910px) {
+                        width: 100%;
+                    }
 
                 }
             }

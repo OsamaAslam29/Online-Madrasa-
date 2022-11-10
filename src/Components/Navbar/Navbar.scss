@@ -45,8 +45,9 @@
             @media screen and (max-width:1400px) {
                 gap: .5rem;
             }
-            @media screen and (max-width:990px) {
+            @media screen and (max-width:700px) {
                 display: none;
+                
             }
     
             .box {
@@ -64,17 +65,16 @@
                     width: 85px;
                     gap: 5px;
                 }
+                @media screen and (max-width:990px) {
+                    height: 70px;
+                    width: 70px;
+                    gap: 3px;
+                }
     
                 div {
                     color: white;
                     font-size: 18px;
                 }
-            }
-        }
-        .slide-boxes{
-            display: none;
-              @media screen and (max-width:990px) {
-                display: block;
             }
         }
     }

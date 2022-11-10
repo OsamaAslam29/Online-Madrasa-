@@ -5,19 +5,38 @@
     flex-direction: column;
     background-size: 100% 100%;
     gap: 15rem;
+    @media screen and (max-width:1400px) {
+        padding: 90px 30px;
+    }
     @media screen and (max-width:990px) {
-        padding: 70px 30px;
+        padding: 80px 30px;
+    }
+    @media screen and (max-width:990px) {
+        padding: 70px 20px;
+        gap: 10rem;
+    }
+    @media screen and (max-width:700px) {
+        gap: 10rem;
+    }
+    @media screen and (max-width:500px) {
+        gap: 8rem;
     }
 
     .text {
         text-align: center;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width:990px) {
+            padding: 0px 20px;
+        }
+        @media screen and (max-width:700px) {
+            padding: 0px 10px;
+        }
 
         h5 {
             margin-bottom: 10px;
             font-weight: 700;
-            font-size: 27px;
+            font-size: var(--card-heading);
             @media screen and (max-width:1400px) {
                 font-size: 24px;
             }
@@ -29,7 +48,7 @@
             }
         }
         div{
-            font-size: 20px;
+            font-size: var(--card-para);
             color: #5a5555;
             font-weight: 500;
             @media screen and (max-width:1400px) {
@@ -49,6 +68,7 @@
         justify-content: center;
         gap: 2rem;
         flex-wrap: wrap;
+        padding: 0 20px;
         @media screen and (max-width:1400px) {
             gap: 1.5rem;
         }

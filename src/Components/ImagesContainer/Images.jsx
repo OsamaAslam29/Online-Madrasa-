@@ -23,7 +23,7 @@ const Images = () => {
 
         <div className="Image-container">
           <div className="flex-card">
-            <Flip>
+            <Flip top>
               <div className="image-card">
                 <div className="logo">
                   <img src={home} alt="" />
@@ -38,7 +38,7 @@ const Images = () => {
                 </span>
               </div>
             </Flip>
-            <Flip>
+            <Flip top>
               <div className="image-card">
                 <div className="logo">
                   <img src={home} alt="" />
@@ -58,7 +58,7 @@ const Images = () => {
             <img src={image} alt="" />
           </div>
           <div className="flex-card">
-            <Flip>
+            <Flip top>
               <div className="image-card">
                 <div className="logo">
                   <img src={home} alt="" />
@@ -73,7 +73,7 @@ const Images = () => {
                 </span>
               </div>
             </Flip>
-            <Flip>
+            <Flip top>
               <div className="image-card">
                 <div className="logo">
                   <img src={home} alt="" />

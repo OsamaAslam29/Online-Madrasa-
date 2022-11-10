@@ -16,13 +16,14 @@
     @media screen and (max-width:990px) {
         gap: 7rem;
     }
-    @media screen and (max-width:705px) {
+    @media screen and (max-width:734px) {
         flex-direction: column;
         gap: 2rem;
-        padding: 3rem 0;
+        padding: 2rem 0.5rem;
     }
     @media screen and (max-width:500px) {
         gap: 2rem;
+        padding: 2rem 1rem;
        
     }
 
@@ -105,16 +106,20 @@
                 border: 1px solid white;
                 border-radius: 10px;
                 @media screen and (max-width:1400px) {
-                    font-size: 30px;
+                    font-size: 25px;
+                    width: 370px;
                 }
 
                 @media screen and (max-width:1200px) {
-                    font-size: 28px;
+                    font-size: 22px;
+                    width: 370px;
                 }
 
                 @media screen and (max-width:990px) {
                     padding: 5px 20px;
                     font-size: 20px;
+                    width: 330px;
+
                 }
 
             }
@@ -137,6 +142,7 @@
 
                 @media screen and (max-width:1400px) {
                     font-size: 25px;
+                    width: 370px;
                 }
 
                 @media screen and (max-width:1200px) {
@@ -146,6 +152,7 @@
                 @media screen and (max-width:990px) {
                     font-size: 20px;
                     padding: 7px 20px;
+                    width: 330px;
                 }
 
 

@@ -5,7 +5,7 @@ const FooterBar = () => {
     return (
         <div className='footer-bar'>
             <footer>
-                © Copyright 2022 | Design and developed by Firm Tech Services. All Right Reserved
+                <span>© Copyright 2022 </span> | Design and developed by Firm Tech Services. All Right Reserved
             </footer>
         </div>
     )
