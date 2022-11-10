@@ -5,11 +5,11 @@ import Info from './Info'
 const Contact = () => {
     return (
         <>
-            {/* <div className='contact-container'>
+            <div className='contact-container'>
                 <h5>
                     Contact Us
                 </h5>
-            </div> */}
+            </div>
             <Info/>
         </>
 

@@ -48,6 +48,7 @@ const Info = () => {
                     </div>
                 </div>
                 <div className="bio">
+                    {/* map link : https://www.google.com/maps/place/Perth+WA,+Australia/@-32.0400639,115.9615356,10z/d[…]966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9523123!4d115.861309 */}
                     <div className="image">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432906.0603743683!2d115.96153564999999!3d-32.04006395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1668101901258!5m2!1sen!2s" width="650" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>

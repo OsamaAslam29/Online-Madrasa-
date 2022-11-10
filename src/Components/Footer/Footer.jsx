@@ -14,17 +14,17 @@ import Flip from 'react-reveal/Flip';
 const Footer = () => {
     return (
         <>
-        
+
             <div className="footer-container">
                 <div className="tomb">
                     <img src={tomb} alt="" />
                 </div>
                 <div className="flex-footer">
-                <Flip top>
-                    <div>
-                        <img src={logo} alt="Error" />
-                    </div>
-                </Flip>
+                    <Flip top>
+                        <div>
+                            <img src={logo} alt="Error" />
+                        </div>
+                    </Flip>
                     <div className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting <br /> industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
                 </div>
                 <div className="search-box">
@@ -47,7 +47,7 @@ const Footer = () => {
                             <div>Programs & Events</div>
                             <div>Latest News</div>
                         </div>
-                        
+
                     </div>
                     <div className="section">
                         <div className="heading">
@@ -61,7 +61,7 @@ const Footer = () => {
                             <div>Lorem Ipsum </div>
                             <div>Lorem Ipsum </div>
                         </div>
-                        
+
                     </div>
                     <div className="section">
                         <div className="heading">
@@ -75,7 +75,7 @@ const Footer = () => {
                             <div>Lorem Ipsum </div>
                             <div>Lorem Ipsum </div>
                         </div>
-                        
+
                     </div>
                     <div className="section">
                         <div className="heading">
@@ -92,7 +92,7 @@ const Footer = () => {
                                 <img src={ins} alt="" />
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

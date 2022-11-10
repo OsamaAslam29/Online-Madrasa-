@@ -8,39 +8,24 @@
         height: 7vh;
     }
     @media only screen and (max-width: 990px) {
-        height: 7vh;
-    }
-    @media only screen and (max-width: 700px) {
-        height: 7vh;
-    }
-    @media only screen and (max-width: 500px) {
-        height: 5vh;
+        height: 8vh;
     }
 
     footer {
         color: white;
         font-weight: 400;
-        font-size: 16px;
+        font-size: var(--card-para);
         display: flex;
         align-items: center;
         gap: .5rem;
         span{
             font-size: 20px;
         }
-        @media only screen and (max-width: 1400px) {
-            font-size: 25px;
-        }
-        @media only screen and (max-width: 1200px) {
-            font-size: 17px;
-        }
-        @media only screen and (max-width: 990px) {
-            font-size: 15px;
-        }
-        @media only screen and (max-width: 700px) {
-            font-size: 13px;
-        }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 770px) {
             font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
         }
     }
 }

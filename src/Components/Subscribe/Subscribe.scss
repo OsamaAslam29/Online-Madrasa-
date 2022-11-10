@@ -127,8 +127,8 @@
             ::placeholder {
                 color: white;
             }
-
-            .send-button {
+           
+            button{
                 width: 400px;
                 padding: 10px 20px;
                 background-color: #00A859;
@@ -139,6 +139,7 @@
                 border: 1px solid white;
                 cursor: pointer;
                 outline: none;
+
 
                 @media screen and (max-width:1400px) {
                     font-size: 25px;
@@ -154,8 +155,11 @@
                     padding: 7px 20px;
                     width: 330px;
                 }
-
-
+                
+                
+            }
+            button:hover{
+               background-color: #047540;
             }
         }
     }
