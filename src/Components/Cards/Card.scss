@@ -30,7 +30,7 @@
         }
         div{
             font-size: 20px;
-            color: black;
+            color: #5a5555;
             font-weight: 500;
             @media screen and (max-width:1400px) {
                 font-size: 18px;
@@ -118,20 +118,22 @@
 
                 h5 {
                     font-weight: 700;
-                    font-size: 18px;
+                    font-size: var(--card-heading);
                     color: #F1B211;
                 }
 
                 .title {
                     color: #F1B211;
-                    font-size: 18px;
+                    font-size: var(--card-heading);
                     font-weight: 400;
+                    font-style: italic;
 
                 }
 
                 span {
                     font-weight: 400;
-                    font-size: 13px;
+                    font-size: var(--card-para);
+                    color: #5a5555;
                 }
             }
 

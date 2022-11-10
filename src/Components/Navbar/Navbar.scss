@@ -71,6 +71,12 @@
                 }
             }
         }
+        .slide-boxes{
+            display: none;
+              @media screen and (max-width:990px) {
+                display: block;
+            }
+        }
     }
 }
 

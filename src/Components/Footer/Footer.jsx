@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="flex-footer">
                 <Flip top>
                     <div>
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="Error" />
                     </div>
                 </Flip>
                     <div className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting <br /> industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>

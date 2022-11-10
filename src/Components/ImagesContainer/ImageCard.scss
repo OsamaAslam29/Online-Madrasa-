@@ -19,12 +19,17 @@
             .bio {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
+                gap: .8rem;
 
                 h5 {
                     font-weight: 700;
-                    font-size: 20px;
+                    font-size: var(--card-heading);
                     color: black;
+                }
+                span{
+                    font-size: var(--card-para);
+                    color: #5a5555;
+                    font-weight: 400;
                 }
             }
         }

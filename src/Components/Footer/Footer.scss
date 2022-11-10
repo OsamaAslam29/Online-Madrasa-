@@ -15,15 +15,17 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-        padding-top: 15rem;
+        gap: 3rem;
+        padding-top: 13rem;
+        img{
+            height: 110px;
+        }
 
         .text {
             font-weight: 400;
-            font-size: 24px;
+            font-size: var(--card-para);
             color: white;
             text-align: center;
-            line-height: 40px;
         }
     }
 
@@ -90,7 +92,7 @@
                 flex-direction: column;
                 gap: .5rem;
                 h5{
-                    font-size: 22px;
+                    font-size: var(--card-heading);
                     color: white;
                     font-weight: 700;
                 }
@@ -105,10 +107,16 @@
                 flex-direction: column;
                 gap: .5rem;
                 font-size: 20px;
+                div{
+                    font-size: var(--card-para);
+                }
                 .icons{
                     padding-top: 10px;
                     display: flex;
                     gap: 1rem;
+                    img{
+                        height: 30px;
+                    }
                 }
             }
         }

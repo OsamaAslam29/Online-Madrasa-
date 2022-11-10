@@ -14,13 +14,13 @@ const Cards = () => {
                 <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
             </div>
             <div className="cards">
-                <div class="card">
+                <div className="card">
                     <div className="img">
                         <img src={card} style={{ width: "100%" }} />
                     </div>
                     <div className="bio">
                         <h5>Name</h5>
-                        <div class="title">Desigination</div>
+                        <div className="title">Desigination</div>
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting</span>
                     </div>
                     <div className="icons">
@@ -29,13 +29,13 @@ const Cards = () => {
                         <img src={link} alt="" />
                     </div>
                 </div>
-                <div class="card">
+                <div className="card">
                     <div className="img" >
                         <img src={card} style={{ width: "100%" }} />
                     </div>
                     <div className="bio">
                         <h5>Name</h5>
-                        <div class="title">Desigination</div>
+                        <div className="title">Desigination</div>
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting</span>
                     </div>
                     <div className="icons">
@@ -44,13 +44,13 @@ const Cards = () => {
                         <img src={link} alt="" />
                     </div>
                 </div>
-                <div class="card">
+                <div className="card">
                     <div className="img" >
                         <img src={card} style={{ width: "100%" }} />
                     </div>
                     <div className="bio">
                         <h5>Name</h5>
-                        <div class="title">Desigination</div>
+                        <div className="title">Desigination</div>
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting</span>
                     </div>
                     <div className="icons">
@@ -59,13 +59,13 @@ const Cards = () => {
                         <img src={link} alt="" />
                     </div>
                 </div>
-                <div class="card">
+                <div className="card">
                     <div className="img" >
                         <img src={card} style={{ width: "100%" }} />
                     </div>
                     <div className="bio">
                         <h5>Name</h5>
-                        <div class="title">Desigination</div>
+                        <div className="title">Desigination</div>
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting</span>
                     </div>
                     <div className="icons">

@@ -1,7 +1,7 @@
 .Image-container {
     // height: 100vh;
     display: flex;
-    gap: 6rem;
+    gap: 7rem;
     justify-content: center;
     align-items: center;
     padding: 80px 0;
@@ -27,8 +27,9 @@
 
             span {
                 text-align: center;
-                font-weight: 600;
-                font-size: 18px;
+                font-weight: 400;
+                font-size: var(--card-para);
+                color: #5a5555;
             }
         }
     }

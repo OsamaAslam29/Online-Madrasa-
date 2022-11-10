@@ -24,8 +24,8 @@ const Info = () => {
                         <img src={first} alt="" />
                     </div>
                     <div className="card-info">
-                        <span>Visit Us:</span>
-                        <h5>Perth Australia</h5>
+                        <h5>Visit Us:</h5>
+                        <span>Perth Australia</span>
                     </div>
                 </div>
                 <div className="card-data">
@@ -33,8 +33,8 @@ const Info = () => {
                         <img src={second} alt="" />
                     </div>
                     <div className="card-info">
-                        <span>Visit Us:</span>
-                        <h5>info@madrasa.io</h5>
+                        <h5>Visit Us:</h5>
+                        <span>info@madrasa.io</span>
                     </div>
                 </div>
                 <div className="card-data">
@@ -42,8 +42,8 @@ const Info = () => {
                         <img src={third} alt="" />
                     </div>
                     <div className="card-info">
-                        <span>Phone:</span>
-                        <h5>+61 000 123 4567</h5>
+                        <h5>Phone:</h5>
+                        <span>+61 000 123 4567</span>
                     </div>
                 </div>
             </div>

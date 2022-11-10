@@ -74,9 +74,9 @@
 
             .card-info {
                 line-height: 40px;
-                span {
-                    font-weight: 400;
-                    font-size: 23px;
+                h5 {
+                    font-weight: 700;
+                    font-size: var(--card-heading);
                     color: #F1B211;
 
                     @media screen and (max-width:1400px) {
@@ -92,9 +92,9 @@
                     }
                 }
 
-                h5 {
-                    font-weight: bold;
-                    font-size: 26px;
+                span {
+                    font-weight: 400;
+                    font-size: var(--card-heading);
                     color: #F1B211;
 
                     @media screen and (max-width:1400px) {

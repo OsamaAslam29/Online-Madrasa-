@@ -11,7 +11,7 @@ const Subscribe = () => {
             <div className="right-container">
                 <div className="flex-sub-sect">
                     <Fade top>
-                        <div className="content">Subscribe Us</div>
+                        <h5>Subscribe Us</h5>
                     </Fade>
                     <input className='input-field' type="text" placeholder='Email:' />
                     <button className='send-button'>Send</button>
@@ -19,7 +19,7 @@ const Subscribe = () => {
             </div>
 
         </div>
-    )
+    )         
 }
 
 export default Subscribe
