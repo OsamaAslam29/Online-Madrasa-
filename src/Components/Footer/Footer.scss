@@ -1,19 +1,23 @@
 .footer-container {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Image.jpg');
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Images.jpg');
+    // background-size: 100% 100%;
+    // background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 5rem;
     position: relative;
-    @media screen and (max-width:1200px) {
-        gap: 3rem;
+    // background-repeat: no-repeat;
+    @media screen and (max-width:800px) {
+
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Image.jpg');
+       
     }
 
 
     .tomb {
         position: absolute;
         img{
-            width: 100%;
+            // width: 100%;
         }
 
     }

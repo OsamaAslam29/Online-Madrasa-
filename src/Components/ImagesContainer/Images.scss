@@ -1,35 +1,112 @@
-.images__main{
+.images__main {
     position: relative;
     padding-top: 4rem;
-    // padding-left: 15rem;
-    .absolute__images{
+
+    .absolute__images {
         // position: absolute;
-            padding-left: 15rem;
-            margin-bottom: -13rem;
-        .large{
+        padding-left: 15rem;
+        margin-bottom: -13rem;
+        @media screen and (max-width:1600px) {
+            padding-left: 10rem;
+
+        }
+        @media screen and (max-width:1400px) {
+            padding-left: 6rem;
+             margin-bottom: -9rem;
+
+        }
+        @media screen and (max-width:990px) {
+             margin-bottom: 2rem;
+            padding-left: 0rem;
+            display: flex;
+            justify-content: center;
+
+        }
+        @media screen and (max-width:550px) {
+            text-align: center;
+
+        }
+
+        .large {
             position: relative;
             width: 444px;
             z-index: -999;
 
-            img{
+            img {
                 width: 500px;
                 height: 600px;
+                @media screen and (max-width:1600px) {
+                    width: 400px;
+                    height: 554px;
+                }
+                @media screen and (max-width:1400px) {
+                    width: 350px;
+                    height: 454px;
+                }
+                @media screen and (max-width:800px) {
+                    width: 300px;
+                    height: 404px;
+                }
+                @media screen and (max-width:550px) {
+                    width: 200px;
+                    height: 274px;
+                }
+
             }
-            .small{
+
+            .small {
                 position: absolute;
                 left: 20rem;
                 bottom: 6rem;
-                img{
+                @media screen and (max-width:1600px) {
+                    bottom: 4rem;
+                    left: 18rem;
+
+
+                }
+                @media screen and (max-width:1400px) {
+                    left: 17rem;
+
+                }
+                @media screen and (max-width:1400px) {
+                    left: 16rem;
+
+                }
+                @media screen and (max-width:550px) {
+                    left: 15rem;
+                    bottom: 2rem;
+
+
+                }
+
+                img {
                     width: 500px;
                     height: 394px;
+
+                    @media screen and (max-width:1600px) {
+                        width: 350px;
+                        height: 354px;
+                    }
+                    @media screen and (max-width:1400px) {
+                        width: 220px;
+                        height: 250px;
+                    }
+                    @media screen and (max-width:800px) {
+                        width: 150px;
+                        height: 200px;
+                    }
+                    @media screen and (max-width:550px) {
+                        width: 100px;
+                        height: 180px;
+                    }
                 }
-                
+
 
             }
         }
     }
 
-    
+
 }
 
 
@@ -39,38 +116,46 @@
     justify-content: center;
     align-items: center;
     padding: 80px 20px;
+
     @media screen and (max-width:1400px) {
         gap: 4rem;
     }
+
     @media screen and (max-width:1150px) {
         gap: 2rem;
     }
+
     @media screen and (max-width:990px) {
-       flex-direction: column;
-       gap: 3rem;
+        flex-direction: column;
+        gap: 3rem;
     }
 
     .flex-card {
         display: flex;
         flex-direction: column;
         gap: 8rem;
+
         @media screen and (max-width:1400px) {
             gap: 5rem;
         }
+
         @media screen and (max-width:1150px) {
             gap: 3rem;
         }
+
         @media screen and (max-width:990px) {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
 
         }
+
         .image-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2.5rem;
+
             @media screen and (max-width:1150px) {
                 gap: 2rem;
             }
@@ -81,10 +166,11 @@
                 color: white;
                 background-color: #00A859;
             }
-            a:hover{
+
+            a:hover {
                 background-color: #047540;
                 text-decoration: none;
-             }
+            }
 
             span {
                 text-align: center;
@@ -104,10 +190,12 @@
                 height: 550px;
                 width: 340px;
             }
+
             @media screen and (max-width:1150px) {
                 height: 450px;
                 width: 250px;
             }
+
             @media screen and (max-width:990px) {
                 height: 350px;
                 width: 250px;
@@ -116,5 +204,3 @@
         }
     }
 }
-
-

@@ -14,11 +14,11 @@ function App() {
     <>
       <Navbar />
       <MainSlider />
-      {/* <Images /> */}
-      {/* <Subscribe />
+      <Images />
+      <Subscribe />
       <Cards />
-    <Footer /> */}
-    {/* <Contact /> */}
+      <Contact />
+      <Footer />
 
     </>
   );
