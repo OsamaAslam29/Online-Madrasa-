@@ -1,22 +1,79 @@
+.images__main{
+    position: relative;
+    padding-top: 4rem;
+    // padding-left: 15rem;
+    .absolute__images{
+        // position: absolute;
+            padding-left: 15rem;
+            margin-bottom: -13rem;
+        .large{
+            position: relative;
+            width: 444px;
+            z-index: -999;
+
+            img{
+                width: 500px;
+                height: 600px;
+            }
+            .small{
+                position: absolute;
+                left: 20rem;
+                bottom: 6rem;
+                img{
+                    width: 500px;
+                    height: 394px;
+                }
+                
+
+            }
+        }
+    }
+
+    
+}
+
+
 .Image-container {
-    // height: 100vh;
     display: flex;
     gap: 7rem;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
-    flex-wrap: wrap;
+    padding: 80px 20px;
+    @media screen and (max-width:1400px) {
+        gap: 4rem;
+    }
+    @media screen and (max-width:1150px) {
+        gap: 2rem;
+    }
+    @media screen and (max-width:990px) {
+       flex-direction: column;
+       gap: 3rem;
+    }
 
     .flex-card {
         display: flex;
         flex-direction: column;
         gap: 8rem;
+        @media screen and (max-width:1400px) {
+            gap: 5rem;
+        }
+        @media screen and (max-width:1150px) {
+            gap: 3rem;
+        }
+        @media screen and (max-width:990px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
 
+        }
         .image-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2.5rem;
+            @media screen and (max-width:1150px) {
+                gap: 2rem;
+            }
 
             a {
                 padding: 12px 20px;
@@ -43,39 +100,21 @@
             height: 615px;
             width: 370px;
 
+            @media screen and (max-width:1400px) {
+                height: 550px;
+                width: 340px;
+            }
+            @media screen and (max-width:1150px) {
+                height: 450px;
+                width: 250px;
+            }
+            @media screen and (max-width:990px) {
+                height: 350px;
+                width: 250px;
+            }
+
         }
     }
 }
 
 
-.images__main{
-    position: relative;
-    padding-top: 4rem;
-    padding-left: 15rem;
-    .absolute__images{
-        // position: absolute;
-        margin-bottom: -13rem;
-        .large{
-            position: relative;
-            width: 444px;
-            z-index: -999;
-            img{
-                width: 500px;
-                height: 600px;
-            }
-            .small{
-                position: absolute;
-                left: 20rem;
-                bottom: 6rem;
-                img{
-                    width: 500px;
-                    height: 394px;
-                }
-                
-
-            }
-        }
-    }
-
-    
-}

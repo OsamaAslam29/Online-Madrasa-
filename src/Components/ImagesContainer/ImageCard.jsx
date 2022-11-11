@@ -8,8 +8,6 @@ import goal from '../../Assets/goal.png'
 const ImageCard = () => {
     return (
         <div className='Image-card-container'>
-            <div className="images">
-            </div>
             <div className="cards">
                 <div className="img-card">
                     <div className="imgs">

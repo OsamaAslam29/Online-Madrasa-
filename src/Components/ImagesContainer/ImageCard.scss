@@ -1,14 +1,29 @@
 .Image-card-container {
     .cards {
-        padding: 40px 0;
+        padding: 40px 30px;
         display: flex;
         justify-content: center;
         gap: 2.5rem;
-        flex-wrap: wrap;
+
+        @media screen and (max-width:1400px) {
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:1200px) {
+            gap: 1.5rem;
+        }
+
+        @media screen and (max-width:990px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width:500px) {
+            padding: 40px 15px;
+
+        }
 
         .img-card {
             padding: 35px 40px;
-            max-width: 335px;
+            // max-width: 335px;
             background: #FFFFFF;
             box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
             border-radius: 40px;
@@ -16,17 +31,42 @@
             gap: 1.5rem;
             flex-direction: column;
 
+            @media screen and (max-width:1400px) {
+                padding: 25px 30px;
+                gap: 1rem;
+            }
+
+            @media screen and (max-width:1200px) {
+                padding: 15px 20px;
+                gap: .5rem;
+            }
+
+            @media screen and (max-width:990px) {
+                padding: 15px 35px;
+                width: 100%;
+            }
+
+
+
             .bio {
                 display: flex;
                 flex-direction: column;
                 gap: .8rem;
 
+                @media screen and (max-width:1200px) {
+                    gap: .5rem;
+
+                }
+
+
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
                     color: black;
+
                 }
-                span{
+
+                span {
                     font-size: var(--card-para);
                     color: #5a5555;
                     font-weight: 400;
