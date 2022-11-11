@@ -80,6 +80,9 @@ li.slick-active button:before {
 
 .slider__main {
   height: 720px;
+  @media screen and (max-width:1400px) {
+    height: 600px;
+}
 
   background: #d9d9d9;
   position: relative;

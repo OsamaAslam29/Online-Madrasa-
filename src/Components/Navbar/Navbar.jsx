@@ -10,17 +10,69 @@ import five from '../../Assets/five.png'
 import six from '../../Assets/six.png'
 import seven from '../../Assets/seven.png'
 import Slider from "react-slick";
+import MainSlider from '../Slider/MainSlider';
+import HomeSlider from '../Slider/Slider';
+import home from "../../Assets/home.svg";
 
 
+const arr = [
+  {
+    img: one,
+    heading: "One",
+  },
+  {
+    img: one,
+    heading: "Two",
+  },
+  {
+    img: one,
+    heading: "Three",
+  },
+  {
+    img: one,
+    heading: "Four",
+  },
+  {
+    img: one,
+    heading: "Five",
+  },
+  {
+    img: one,
+    heading: "Six",
+  },
+  {
+    img: one,
+    heading: "Seven",
+  },
+];
 const Navbar = () => {
-  const settings = {
-    dots: true,
+  var settings = {
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+
+        },
+      },
+
+    ],
   };
   return (
+
     <>
       <div className="nav-container">
         <Fade top>
@@ -30,7 +82,7 @@ const Navbar = () => {
         </Fade>
 
         <div className="green-box">
-          <Fade top>
+          {/* <Fade top>
             <div className="flex-boxes">
               <div className="box">
                 <img src={one} alt="" />
@@ -61,41 +113,22 @@ const Navbar = () => {
                 <div>Seven</div>
               </div>
             </div>
-          </Fade>
-          {/* <div className="slide-boxes">
-            <div>
-              <h2> Multiple items </h2>
-              <Slider {...settings}>
-                <div>
-                  <h3>1</h3>
-                </div>
-                <div>
-                  <h3>2</h3>
-                </div>
-                <div>
-                  <h3>3</h3>
-                </div>
-                <div>
-                  <h3>4</h3>
-                </div>
-                <div>
-                  <h3>5</h3>
-                </div>
-                <div>
-                  <h3>6</h3>
-                </div>
-                <div>
-                  <h3>7</h3>
-                </div>
-                <div>
-                  <h3>8</h3>
-                </div>
-                <div>
-                  <h3>9</h3>
-                </div>
-              </Slider>
-            </div>
-          </div> */}
+          </Fade> */}
+          <div className="parent">
+            <Slider {...settings}>
+              {arr.map((data, i) => {
+                return (
+                  <div className="slide_parent" key={i}>
+                    <div>
+                      <img src={data.img} alt="Icons" />
+                    </div>
+                    <div className="text">{data.heading}</div>
+                  </div>
+                );
+              })}
+            </Slider>
+          </div>
+
         </div>
 
       </div>
