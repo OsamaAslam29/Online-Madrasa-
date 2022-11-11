@@ -34,7 +34,7 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -52,6 +52,16 @@ const HomeSlider = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          initialSlide: 0,
+          
         },
       },
     ],

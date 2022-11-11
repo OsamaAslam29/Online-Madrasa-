@@ -12,7 +12,7 @@ import Subscribe from './Components/Subscribe/Subscribe'
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <MainSlider />
       {/* <Images /> */}
       {/* <Subscribe />
