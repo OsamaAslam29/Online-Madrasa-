@@ -41,16 +41,12 @@
         }
 
         .left-container {
-            h5 {
-                font-size: 35px;
+            h2 {
+                font-size: var(--main-heading);
                 font-weight: 400;
-                line-height: 50px;
+                line-height: 40px;
                 text-align: left;
 
-                @media screen and (max-width:1400px) {
-                    font-size: 30px;
-                    line-height: 40px;
-                }
 
                 @media screen and (max-width:1200px) {
                     font-size: 25px;
@@ -70,14 +66,11 @@
 
         .divider-line {
             border: 1px solid #F1B211;
-            height: 90px;
+            height: 80px;
 
-            @media screen and (max-width:1400px) {
-                height: 73px;
-            }
 
             @media screen and (max-width:1200px) {
-                height: 58px;
+                height: 60px;
             }
 
             @media screen and (max-width:990px) {
@@ -85,28 +78,28 @@
             }
 
             @media screen and (max-width:750px) {
-                height: 2px;
+                height: 1px;
             }
         }
 
         .right-container {
-            font-size: 18px;
+            font-size: var(--heading-para);
             font-weight: 400;
 
-            @media screen and (max-width:1400px) {
-                font-size: 18px;
+            // @media screen and (max-width:1400px) {
+            //     font-size: 18px;
 
-            }
+            // }
 
-            @media screen and (max-width:120px) {
-                font-size: 15px;
+            // @media screen and (max-width:120px) {
+            //     font-size: 15px;
 
-            }
+            // }
 
-            @media screen and (max-width:990px) {
-                font-size: 13px;
+            // @media screen and (max-width:990px) {
+            //     font-size: 13px;
 
-            }
+            // }
         }
     }
 
@@ -129,8 +122,9 @@
         }
 
         .card-data {
-            padding: 50px 60px;
+            padding: 40px 60px 40px 40px;
             display: flex;
+            align-items: center;
             gap: 1rem;
             flex-wrap: wrap;
             align-items: center;
@@ -140,13 +134,13 @@
 
             .icon {
                 img {
-                    height: 65px;
-                    @media screen and (max-width:1400px) {
-                        height: 60px;
-                    }
-                    @media screen and (max-width:1200px) {
-                        height: 50px;
-                    }
+                    height: 45px;
+                    // @media screen and (max-width:1400px) {
+                    //     height: 60px;
+                    // }
+                    // @media screen and (max-width:1200px) {
+                    //     height: 50px;
+                    // }
                 }
             }
 
@@ -163,15 +157,18 @@
             }
 
             .card-info {
-                line-height: 40px;
+                line-height: 35px;
 
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
-                    color: #F1B211;
 
-                    @media screen and (max-width:1400px) {
-                        font-size: 20px;
+                    @media screen and (max-width:1200px) {
+                        font-size: 18px;
+                    }
+
+                    @media screen and (max-width:990px) {
+                        font-size: 15px;
                     }
 
                     // @media screen and (max-width:1200px) {
@@ -183,22 +180,16 @@
                     // }
                 }
 
-                span {
+                a {
                     font-weight: 400;
-                    font-size: var(--card-heading);
+                    font-size: var(--heading-para);
                     color: #F1B211;
 
-                    @media screen and (max-width:1400px) {
-                        font-size: 23px;
-                    }
 
                     @media screen and (max-width:1200px) {
-                        font-size: 20px;
+                        font-size: 13px;
                     }
 
-                    @media screen and (max-width:990px) {
-                        font-size: 18px;
-                    }
                 }
             }
         }
@@ -258,7 +249,7 @@
         }
 
         .message {
-            padding: 0 50px;
+            padding: 40px 50px;
             align-items: center;
             display: flex;
             background: #FFFFFF;
@@ -266,7 +257,7 @@
             border-radius: 20px;
 
             @media screen and (max-width:1400px) {
-                padding: 0 30px;
+                padding: 30px;
             }
 
             @media screen and (max-width:1200px) {
@@ -274,20 +265,20 @@
             }
 
             @media screen and (max-width:910px) {
-                padding: 20px 20px;
+                padding: 30px 20px;
                 justify-content: center;
             }
 
             h5 {
                 color: #F1B211;
                 text-align: center;
-                font-size: 27px;
+                font-size: var(--card-heading);
                 font-weight: bold;
                 margin-bottom: 9px;
 
-                @media screen and (max-width:1200px) {
-                    font-size: 23px;
-                }
+                // @media screen and (max-width:1200px) {
+                //     font-size: 23px;
+                // }
 
             }
 
@@ -313,13 +304,8 @@
                     border: 1px solid #F1B211;
                     border-radius: 10px;
                     padding: 10px 15px;
-                    font-size: 18px;
-                    font-weight: bold;
+                    font-size: var(--heading-para);
                     color: #00A859;
-
-                    @media screen and (max-width:1200px) {
-                        font-size: 15px;
-                    }
 
                     @media screen and (max-width:910px) {
                         width: 100%;
@@ -329,20 +315,20 @@
 
                 button {
                     width: 50%;
-                    padding: 7px 10px;
+                    padding: 8px 10px;
                     background-color: #00A859;
                     border-radius: 10px;
                     font-weight: bold;
                     color: white;
-                    font-size: 22px;
+                    // font-size: 22px;
+                    font-size: var(--heading-para);
                     font-weight: bold;
                     outline: none;
                     border: 1px solid #F1B211;
                     margin-top: 5px;
 
                     @media screen and (max-width:1200px) {
-                        font-size: 20px;
-                        padding: 5px 8px;
+                        padding: 8px 8px;
                     }
 
                     @media screen and (max-width:910px) {

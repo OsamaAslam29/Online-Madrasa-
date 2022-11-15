@@ -31,7 +31,7 @@
             }
 
             @media screen and (max-width: 700px) {
-                height: 40px;
+                height: 45px;
             }
         }
     }
@@ -46,8 +46,8 @@
         @media screen and (max-width:1400px) {
             margin-top: 5.5rem;
         }
-        @media screen and (max-width:550px) {
-            margin-top: 4.5rem;
+        @media screen and (max-width:990px) {
+            // display: ;
         }
 
         .flex-boxes {
@@ -58,7 +58,7 @@
                 gap: .5rem;
             }
 
-            @media screen and (max-width:750px) {
+            @media screen and (max-width:990px) {
                 display: none;
 
             }
@@ -92,124 +92,37 @@
             }
         }
 
-        // *************
-        .slick-dots li button:before {
-            font-size: 16px;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            content: "•";
-            text-align: center;
-            opacity: 0.25;
-            color: gray;
+    }
+    .mobile-menu{
+        display: none;
+        @media screen and (max-width: 990px) {
+            display: block;
         }
 
-        li.slick-active button:before {
-            color: #ffffff !important;
+        .menu svg{
+            color: #00a859;
         }
-
-        .slick-dots {
-            bottom: -60px;
-        }
-
-        .slide_parent {
-            display: flex !important;
-            justify-content: center;
-            flex-direction: column !important;
-            align-items: center !important;
-            width: 110px !important;
-            height: 108px;
-            gap: 10px;
-            background: #00A859;
-
-            @media screen and (max-width:1400px) {
-                width: 100px !important;
-                height: 100px;
-            }
-            @media screen and (max-width: 990px) {
-                width: 90px !important;
-                height: 90px;
-            }
-            @media screen and (max-width: 550px) {
-                width: 80px !important;
-                height: 80px;
-            }
-
-        }
-
-        .parent {
-            max-width: 760px;
+    }
+}
+.main{
+    .logo{
+        padding: 20px;
+        height: 50px;
+        img{
             margin: 0 auto;
-
-            @media screen and (max-width:1400px) {
-                max-width: 695px;
-            }
-            @media screen and (max-width: 990px) {
-                max-width: 610px;
-            }
-            @media screen and (max-width: 850px) {
-                max-width: 310px;
-            }
-            @media screen and (max-width: 550px) {
-                max-width: 280px;
-            }
-
-            .main {
-                display: flex !important;
-                justify-content: center !important;
-                gap: 10px !important;
-            }
-
-            .number1 {
-                //   background-color: #6FCF97;
-                width: 290px;
-                height: 160px;
-
-                background: #ffffff;
-                display: flex !important;
-                gap: 10px !important;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            .text {
-                font-family: "Montserrat";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 19px;
-                line-height: 27px;
-                /* identical to box height */
-
-                text-align: center;
-
-                color: white;
-            }
+            display: block;
         }
-
-        .slider__main {
-            height: 720px;
-
-            @media screen and (max-width:1400px) {
-                height: 600px;
-            }
-
-            background: #d9d9d9;
-            position: relative;
-
-            .slider__componet {
-                position: absolute;
-                bottom: 6rem;
-                width: 100%;
-
-                @media screen and (max-width:1270px) {
-                    left: 1px;
-                }
-            }
-        }
-
+    }
+    .nav{
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+       .mobile_icon{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+       }
     }
 }

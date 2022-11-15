@@ -12,8 +12,6 @@
         padding: 70px 20px;
         gap: 10rem;
         background:url('../../Assets/Mobile.png');
-        // background-repeat: no-repeat;
-        // background-size: 100% 100%;
     }
     @media screen and (max-width:700px) {
         gap: 10rem;
@@ -33,13 +31,10 @@
             padding: 0px 10px;
         }
 
-        h5 {
+        h2 {
+            font-size: var(--main-heading);
             margin-bottom: 10px;
             font-weight: 700;
-            font-size: var(--card-heading);
-            @media screen and (max-width:1400px) {
-                font-size: 24px;
-            }
             @media screen and (max-width:1200px) {
                 font-size: 20px;
             }
@@ -88,7 +83,7 @@
             flex-direction: column;
             gap: 1.5rem;
             background: #FFFEFE;
-            box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
             @media screen and (max-width:1400px) {
                 padding: 80px 17px 45px 17px;
@@ -108,26 +103,31 @@
 
             .img {
                 position: absolute;
-                top: -125px;
-                left: 45px;
-                border: 2px dotted #00A859;
+                top: -110px;
+                left: 67px;
                 border-radius: 20px;
-                padding: 15px;
-                width: 200px;
-                height: 200px;
+                width: 160px;
+                height: 160px;
+                box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
+
+
                 @media screen and (max-width:1400px) {
-                    width: 170px;
-                    height: 170px;
+                    width: 140px;
+                    height: 140px;
+                    top: -100px;
+                    left: 61px;
                 }
                 @media screen and (max-width:990px) {
-                    width: 150px;
-                    height: 150px;
-                    top: -100px;
-                }
-                @media screen and (max-width:700px) {
                     width: 130px;
                     height: 130px;
+                    top: -97px;
+                    left: 59px;
+                }
+                @media screen and (max-width:700px) {
+                    width: 120px;
+                    height: 120px;
                     top: -90px;
+                    left: 54px;
                 }
             }
 
@@ -139,12 +139,18 @@
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
-                    color: #F1B211;
+                    @media screen and (max-width:1200px) {
+                        font-size: 18px;
+                    }
+                    @media screen and (max-width:990px) {
+                        font-size: 15px;
+                    }
+
                 }
 
                 .title {
                     color: #F1B211;
-                    font-size: var(--card-heading);
+                    font-size: var(--card-para);
                     font-weight: 400;
                     font-style: italic;
 

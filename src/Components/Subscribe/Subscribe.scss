@@ -78,46 +78,39 @@
 
             h5 {
                 text-align: center;
-                font-size: 38px;
-                font-weight: 400;
+                font-weight: 700;
+                font-size: var(--main-heading);
                 color: white;
-
-                @media screen and (max-width:1400px) {
-                    font-size: 33px;
-                }
-
                 @media screen and (max-width:1200px) {
-                    font-size: 30px;
+                    font-size: 20px;
                 }
-
                 @media screen and (max-width:990px) {
-                    font-size: 25px;
+                    font-size: 18px;
                 }
 
             }
 
             .input-field {
                 width: 400px;
-                padding: 10px 30px;
+                height: 55px;
+                padding: 10px 20px;
                 font-weight: 400;
-                font-size: 28px;
+                // font-size: 28px;
+                font-size: var(--heading-para);
                 background-color: transparent;
                 color: white;
                 border: 1px solid white;
                 border-radius: 10px;
                 @media screen and (max-width:1400px) {
-                    font-size: 25px;
                     width: 370px;
                 }
 
                 @media screen and (max-width:1200px) {
-                    font-size: 22px;
                     width: 370px;
+                    height: 50px;
                 }
 
                 @media screen and (max-width:990px) {
-                    padding: 5px 20px;
-                    font-size: 20px;
                     width: 330px;
 
                 }
@@ -129,12 +122,13 @@
             }
            
             button{
+                height: 55px;
                 width: 400px;
                 padding: 10px 20px;
                 background-color: #00A859;
                 border-radius: 10px;
                 font-weight: 400;
-                font-size: 28px;
+                font-size: var(--heading-para);
                 color: white;
                 border: 1px solid white;
                 cursor: pointer;
@@ -142,17 +136,13 @@
 
 
                 @media screen and (max-width:1400px) {
-                    font-size: 25px;
                     width: 370px;
                 }
-
                 @media screen and (max-width:1200px) {
-                    font-size: 22px;
+                    height: 50px;
                 }
 
                 @media screen and (max-width:990px) {
-                    font-size: 20px;
-                    padding: 7px 20px;
                     width: 330px;
                 }
                 

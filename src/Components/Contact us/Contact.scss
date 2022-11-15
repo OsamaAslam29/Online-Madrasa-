@@ -1,5 +1,5 @@
 .contact-container {
-    height: 15vh;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,21 +16,9 @@
     h5 {
         color: white;
         font-weight: 400;
-        font-size: 35px;
-
-        @media only screen and (max-width: 1400px) {
-            font-size: 30px;
-        }
+        font-size: var(--main-heading);
 
         @media only screen and (max-width: 1200px) {
-            font-size: 25px;
-        }
-
-        @media only screen and (max-width: 990px) {
-            font-size: 22px;
-        }
-
-        @media only screen and (max-width: 700px) {
             font-size: 20px;
         }
 

@@ -17,33 +17,34 @@
             flex-direction: column;
         }
         @media screen and (max-width:500px) {
-            padding: 40px 15px;
+            padding: 0px 15px;
 
         }
 
         .img-card {
-            padding: 35px 40px;
+            padding: 35px;
             // max-width: 335px;
             background: #FFFFFF;
-            box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
-            border-radius: 40px;
+            // box-shadow: 0px 4px 10px rgb(0 0 0 / 12%);
+            box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
+
+            border-radius: 20px;
             display: flex;
-            gap: 1.5rem;
+            gap: 1rem;
             flex-direction: column;
 
             @media screen and (max-width:1400px) {
-                padding: 25px 30px;
+                padding: 25px;
                 gap: 1rem;
             }
 
             @media screen and (max-width:1200px) {
-                padding: 15px 20px;
+                padding: 20px;
                 gap: .5rem;
             }
-
             @media screen and (max-width:990px) {
-                padding: 15px 35px;
-                width: 100%;
+                align-items: center;
+
             }
 
 
@@ -51,10 +52,15 @@
             .bio {
                 display: flex;
                 flex-direction: column;
-                gap: .8rem;
+                gap: .5rem;
 
                 @media screen and (max-width:1200px) {
                     gap: .5rem;
+
+                }
+                @media screen and (max-width:990px) {
+                    align-items: center;
+
 
                 }
 
@@ -63,6 +69,12 @@
                     font-weight: 700;
                     font-size: var(--card-heading);
                     color: black;
+                    @media screen and (max-width:1200px) {
+                        font-size: 18px;
+                    }
+                    @media screen and (max-width:990px) {
+                        font-size: 15px;
+                    }
 
                 }
 
@@ -70,6 +82,9 @@
                     font-size: var(--card-para);
                     color: #5a5555;
                     font-weight: 400;
+                    @media screen and (max-width:990px) {
+                        text-align: center;
+                    }
                 }
             }
         }

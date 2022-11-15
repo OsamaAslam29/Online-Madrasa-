@@ -34,7 +34,7 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -75,7 +75,7 @@ const HomeSlider = () => {
                 <div>
                   <img src={data.img} alt="Icons" />
                 </div>
-                <div className="text">{data.heading}</div>
+                <h5>{data.heading}</h5>
             </div>
           );
         })}

@@ -1,12 +1,14 @@
 .footer-bar {
-    height: 10vh;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #00A859;
+
     @media only screen and (max-width: 1200px) {
-        height: 7vh;
+        height: 8vh;
     }
+
     @media only screen and (max-width: 990px) {
         height: 8vh;
     }
@@ -18,14 +20,34 @@
         display: flex;
         align-items: center;
         gap: .5rem;
-        span{
-            font-size: 20px;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 16px;
         }
+
         @media only screen and (max-width: 770px) {
             font-size: 10px;
             display: flex;
             flex-direction: column;
             gap: 0px;
+        }
+
+        div {
+            height: 17px;
+            width: -2px;
+            color: white;
+            border: 1px solid white;
+            @media only screen and (max-width: 770px) {
+               display: none;
+            }
+
+        }
+
+        p {
+            display: block;
+            margin: 0;
         }
     }
 }

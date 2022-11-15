@@ -9,6 +9,12 @@ import ins from '../../Assets/in.png'
 import tomb from '../../Assets/masque.png'
 import Flip from 'react-reveal/Flip';
 
+import MenuIcon from '@mui/icons-material/Menu';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const Footer = () => {
@@ -34,66 +40,71 @@ const Footer = () => {
                         <button className='sign-up'>Sign up</button>
                     </div>
                 </div>
-                <div className="info">
-                    <div className="section">
-                        <div className="heading">
-                            <h5>Site Links</h5>
-                            <img src={arrow} alt="" />
-                        </div>
-                        <div className="data">
-                            <div>Home</div>
-                            <div>About Us</div>
-                            <div>Our Services</div>
-                            <div>Programs & Events</div>
-                            <div>Latest News</div>
-                        </div>
 
-                    </div>
-                    <div className="section">
-                        <div className="heading">
-                            <h5>Learning</h5>
-                            <img src={arrow} alt="" />
-                        </div>
-                        <div className="data">
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                        </div>
+                <div className="manage-display">
+                    <div className="info">
+                        <div className="section">
+                            <div className="heading">
+                                <h5>Site Links</h5>
+                                <img src={arrow} alt="" />
 
-                    </div>
-                    <div className="section">
-                        <div className="heading">
-                            <h5>Our Services</h5>
-                            <img src={arrow} alt="" />
-                        </div>
-                        <div className="data">
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                            <div>Lorem Ipsum </div>
-                        </div>
-
-                    </div>
-                    <div className="section">
-                        <div className="heading">
-                            <h5>Contact Us</h5>
-                            <img src={arrow} alt="" />
-                        </div>
-                        <div className="data">
-                            <div>Perth, Australia</div>
-                            <div>Phone: +61-000-123-4567</div>
-                            <div>Email: example@example.ios</div>
-                            <div className="icons">
-                                <img src={feb} alt="" />
-                                <img src={insta} alt="" />
-                                <img src={ins} alt="" />
                             </div>
-                        </div>
+                            <div className="data">
+                                <div>Home</div>
+                                <div>About Us</div>
+                                <div>Our Services</div>
+                                <div>Programs & Events</div>
+                                <div>Latest News</div>
+                            </div>
 
+                        </div>
+                        <div className="section">
+                            <div className="heading">
+                                <h5>Learning</h5>
+                                <img src={arrow} alt="" />
+                            </div>
+                            <div className="data">
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                            </div>
+
+                        </div>
+                        <div className="section">
+                            <div className="heading">
+                                <h5>Our Services</h5>
+                                <img src={arrow} alt="" />
+                            </div>
+                            <div className="data">
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                                <div>Lorem Ipsum </div>
+                            </div>
+
+                        </div>
+                        <div className="section">
+                            <div className="heading">
+                                <h5>Contact Us</h5>
+                                <img src={arrow} alt="" />
+                            </div>
+                            <div className="data">
+                                <div>Perth, Australia</div>
+                                <div>Phone: +61-000-123-4567</div>
+                                <div>Email: example@example.ios</div>
+                                <div className="icons">
+                                    <img src={feb} alt="" />
+                                    <img src={insta} alt="" />
+                                    <img src={ins} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+              
                 </div>
             </div>
 

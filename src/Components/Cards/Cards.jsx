@@ -9,7 +9,7 @@ const Cards = () => {
     return (
         <div className='card-container'>
             <div className="text">
-                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
                 <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                 <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
             </div>

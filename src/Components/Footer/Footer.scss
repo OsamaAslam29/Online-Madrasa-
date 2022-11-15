@@ -1,6 +1,5 @@
 .footer-container {
     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Images.jpg');
-    // background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url(http://onlinequranlearningcenter.com/wp-content/uploads/2022/08/938430448-Ornamental-Arabic-lantern-with-burning-candle-glowing-at-night-and-glittering-golden-bokeh-lights.-Festive-greeting-card-invitation-for-Muslim-holy-month-Ramadan-Kareem-1-1.jpg);
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -9,6 +8,7 @@
     .tomb {
         img{
             width: 100%;
+            margin-top: -1px;
         }
 
     }
@@ -20,7 +20,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 3rem;
-        padding-top: 5rem;
+        @media screen and (max-width:600px) {
+            padding-top: 0rem;
+        }
+
 
         img {
             height: 110px;
@@ -125,6 +128,7 @@
                 position: absolute;
                 top: 0px;
                 right: 0;
+                outline: none;
 
                 @media screen and (max-width:1200px) {
                     padding: 3px 20px;
@@ -136,90 +140,95 @@
         }
     }
 
-    .info {
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        padding-bottom: 5rem;
-
-        @media screen and (max-width:1200px) {
-            gap: 6rem;
-        }
-
-        @media screen and (max-width:990px) {
-            gap: 3rem;
-        }
-        @media screen and (max-width:770px) {
-            // align-items: center;
-            flex-direction: column;
-        }
-
-        .section {
+    .manage-display{
+        .info {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            
-
+            justify-content: center;
+            gap: 10rem;
+            padding-bottom: 5rem;
+    
             @media screen and (max-width:1200px) {
-                gap: .5rem;
+                gap: 6rem;
+            }
+    
+            @media screen and (max-width:990px) {
+                gap: 3rem;
             }
             @media screen and (max-width:770px) {
-                width: 100%;
-                align-items: center;
+                display: none;
             }
-
-            .heading {
+    
+            .section {
                 display: flex;
                 flex-direction: column;
-                gap: .5rem;
-
+                gap: 1rem;
                 
-
-                h5 {
-                    font-size: var(--card-heading);
-                    color: white;
-                    font-weight: 700;
-                    @media screen and (max-width:1200px) {
-                        font-size: 20px;
-                    }
-                    @media screen and (max-width:770px) {
-                        font-size: 18px;
-                    }
+    
+                @media screen and (max-width:1200px) {
+                    gap: .5rem;
                 }
-
-                img {
-                    width: 90px;
-                }
-
-            }
-
-            .data {
-                color: white;
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
                 @media screen and (max-width:770px) {
                     width: 100%;
-                    justify-content: center;
                     align-items: center;
                 }
-
-                div {
-                    font-size: var(--card-para);
-
-                   
-                }
-
-                .icons {
-                    padding-top: 10px;
+    
+                .heading {
                     display: flex;
-                    gap: 1rem;
-
+                    flex-direction: column;
+                    gap: .5rem;
+    
+                    
+    
+                    h5 {
+                        font-size: var(--card-heading);
+                        color: white;
+                        font-weight: 700;
+                        @media screen and (max-width:1200px) {
+                            font-size: 18px;
+                        }
+                        @media screen and (max-width:990px) {
+                            font-size: 15px;
+                        }
+                    }
+    
                     img {
-                        height: 30px;
+                        width: 90px;
+                    }
+    
+                }
+    
+                .data {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    @media screen and (max-width:770px) {
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;
+                    }
+    
+                    div {
+                        font-size: var(--card-para);
+                        @media screen and (max-width:990px) {
+                            font-size: 12px;
+                        }
+                       
+                    }
+    
+                    .icons {
+                        padding-top: 10px;
+                        display: flex;
+                        gap: 1rem;
+    
+                        img {
+                            height: 30px;
+                        }
                     }
                 }
             }
         }
     }
+    
 }
