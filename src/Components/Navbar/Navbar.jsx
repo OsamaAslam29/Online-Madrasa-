@@ -2,17 +2,15 @@ import React from 'react'
 import './Navbar.scss'
 import Fade from 'react-reveal/Fade';
 import logo from '../../Assets/logo.png'
-import one from '../../Assets/one.png'
-import two from '../../Assets/two.png'
-import three from '../../Assets/three.png'
-import four from '../../Assets/four.png'
-import five from '../../Assets/five.png'
-import six from '../../Assets/six.png'
-import seven from '../../Assets/seven.png'
-import Slider from "react-slick";
-import MainSlider from '../Slider/MainSlider';
-import HomeSlider from '../Slider/Slider';
-import home from "../../Assets/home.svg";
+// import home from "../../Assets/thirds.png";
+
+import home from '../../Assets/Menu/Home.svg'
+import about from '../../Assets/Menu/About.svg'
+// import mosque from '../../Assets/Menu/Mosque.svg'
+import services from '../../Assets/Menu/Services.svg'
+// import mosque from '../../Assets/Menu/Mosque.svg'
+import quran from '../../Assets/Menu/Quran.svg'
+// import quran from '../../Assets/Menu/Quran.svg'
 
 
 
@@ -20,10 +18,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 // import HomeIcon from '@mui/icons-material/Home';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'; import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import PostAddOutlinedIcon from '@mui/icons-material/PostAddOutlined';
-import AddIcCallOutlinedIcon from '@mui/icons-material/AddIcCallOutlined';
+// import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+// import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'; 
+// import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+// import PostAddOutlinedIcon from '@mui/icons-material/PostAddOutlined';
+// import AddIcCallOutlinedIcon from '@mui/icons-material/AddIcCallOutlined';
 
 
 
@@ -59,31 +58,31 @@ const Navbar = () => {
         <div className="nav">
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>One</div>
+            <div>Home</div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Two</div>
+            <div>About </div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Three</div>
+            <div>Services</div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Four</div>
+            <div>Quran</div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Five</div>
+            <div> Mosques</div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Six</div>
+            <div>Register</div>
           </div>
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
-            <div>Seven</div>
+            <div>Contact</div>
           </div>
           
         </div>
@@ -106,32 +105,32 @@ const Navbar = () => {
         <div className="green-box">
           <div className="flex-boxes">
             <div className="box">
-              <img src={one} alt="" />
-              <div>One</div>
+              <img src={home} alt="" />
+              <div>Home</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Two</div>
+              <img src={about} alt="" />
+              <div>About</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Three</div>
+              <img src={services} alt="" />
+              <div>Services</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Four</div>
+              <img src={quran} alt="" />
+              <div>Quran</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Five</div>
+              <img src={home} alt="" />
+              <div>Mosques</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Six</div>
+              <img src={quran} alt="" />
+              <div>Register</div>
             </div>
             <div className="box">
-              <img src={one} alt="" />
-              <div>Seven</div>
+              <img src={quran} alt="" />
+              <div>Contact</div>
             </div>
           </div>
         </div>
@@ -144,7 +143,9 @@ const Navbar = () => {
               <React.Fragment key={anchor}>
 
                 <div className="menu">
+                <Fade top>
                   <MenuIcon onClick={toggleDrawer(anchor, true)} style={{ fontSize: "35px" }} />
+                  </Fade>
                 </div>
                 <SwipeableDrawer
                   anchor={anchor}

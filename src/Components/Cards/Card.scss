@@ -35,10 +35,10 @@
             font-size: var(--main-heading);
             margin-bottom: 10px;
             font-weight: 700;
-            @media screen and (max-width:1200px) {
+            @media screen and (max-width:990px) {
                 font-size: 20px;
             }
-            @media screen and (max-width:990px) {
+            @media screen and (max-width:750px) {
                 font-size: 18px;
             }
         }
@@ -46,15 +46,6 @@
             font-size: var(--card-para);
             color: #5a5555;
             font-weight: 500;
-            @media screen and (max-width:1400px) {
-                font-size: 18px;
-            }
-            @media screen and (max-width:1200px) {
-                font-size: 16px;
-            }
-            @media screen and (max-width:990px) {
-                font-size: 14px;
-            }
         }
     }
 
@@ -108,7 +99,7 @@
                 border-radius: 20px;
                 width: 160px;
                 height: 160px;
-                box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
+                // box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
 
 
                 @media screen and (max-width:1400px) {
@@ -135,14 +126,17 @@
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
+                @media screen and (max-width:550px) {
+                    gap: .2rem;
+                }
 
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width:990px) {
                         font-size: 18px;
                     }
-                    @media screen and (max-width:990px) {
+                    @media screen and (max-width:750px) {
                         font-size: 15px;
                     }
 

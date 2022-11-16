@@ -8,30 +8,69 @@ import insta from '../../Assets/insta.png'
 import ins from '../../Assets/in.png'
 import tomb from '../../Assets/masque.png'
 import Flip from 'react-reveal/Flip';
-
 import MenuIcon from '@mui/icons-material/Menu';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 
 
 const Footer = () => {
+    const displays = () => {
+        if (document.getElementById("site").style.display === "none") {
+
+            document.getElementById("site").style.display = "flex"
+        }
+        else {
+            document.getElementById("site").style.display = "none"
+
+        }
+    }
+    const Learning = () => {
+        if (document.getElementById("Learning").style.display === "none") {
+
+            document.getElementById("Learning").style.display = "flex"
+        }
+        else {
+            document.getElementById("Learning").style.display = "none"
+
+        }
+    }
+    const Services = () => {
+        if (document.getElementById("Services").style.display === "none") {
+
+            document.getElementById("Services").style.display = "flex"
+        }
+        else {
+            document.getElementById("Services").style.display = "none"
+
+        }
+    }
+    const Contact = () => {
+        if (document.getElementById("Contact").style.display === "none") {
+
+            document.getElementById("Contact").style.display = "flex"
+        }
+        else {
+            document.getElementById("Contact").style.display = "none"
+
+        }
+    }
     return (
         <>
 
             <div className="footer-container">
-                <div className="tomb">
+                {/* <div className="tomb">
                     <img src={tomb} alt="" />
-                </div>
+                </div> */}
                 <div className="flex-footer">
                     <Flip top>
                         <div>
                             <img src={logo} alt="Error" />
                         </div>
                     </Flip>
-                    <div className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting <br /> industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    <div className='text'>
+                        <p className='text'>The whole learning process is extremely simple. Yet! We <br /></p>
+                        <p className='text'>are available 24/7 to support our honorable teachers and students. </p>
+                    </div>
                 </div>
                 <div className="search-box">
                     <div className="text">Subscribe For Latest Updates</div>
@@ -47,9 +86,10 @@ const Footer = () => {
                             <div className="heading">
                                 <h5>Site Links</h5>
                                 <img src={arrow} alt="" />
+                                <MenuIcon className='icon' onClick={displays} />
 
                             </div>
-                            <div className="data">
+                            <div className="data" id='site'>
                                 <div>Home</div>
                                 <div>About Us</div>
                                 <div>Our Services</div>
@@ -62,8 +102,9 @@ const Footer = () => {
                             <div className="heading">
                                 <h5>Learning</h5>
                                 <img src={arrow} alt="" />
+                                <MenuIcon className='icon' onClick={Learning} />
                             </div>
-                            <div className="data">
+                            <div className="data" id='Learning'>
                                 <div>Lorem Ipsum </div>
                                 <div>Lorem Ipsum </div>
                                 <div>Lorem Ipsum </div>
@@ -76,8 +117,9 @@ const Footer = () => {
                             <div className="heading">
                                 <h5>Our Services</h5>
                                 <img src={arrow} alt="" />
+                                <MenuIcon className='icon' onClick={Services} />
                             </div>
-                            <div className="data">
+                            <div className="data" id='Services'>
                                 <div>Lorem Ipsum </div>
                                 <div>Lorem Ipsum </div>
                                 <div>Lorem Ipsum </div>
@@ -87,11 +129,12 @@ const Footer = () => {
 
                         </div>
                         <div className="section">
-                            <div className="heading">
+                            <div className="heading" >
                                 <h5>Contact Us</h5>
                                 <img src={arrow} alt="" />
+                                <MenuIcon className='icon' onClick={Contact} />
                             </div>
-                            <div className="data">
+                            <div className="data" id='Contact'>
                                 <div>Perth, Australia</div>
                                 <div>Phone: +61-000-123-4567</div>
                                 <div>Email: example@example.ios</div>
@@ -104,7 +147,7 @@ const Footer = () => {
 
                         </div>
                     </div>
-              
+
                 </div>
             </div>
 

@@ -48,14 +48,13 @@
                 text-align: left;
 
 
-                @media screen and (max-width:1200px) {
-                    font-size: 25px;
-                    line-height: 30px;
-                }
-
                 @media screen and (max-width:990px) {
                     font-size: 20px;
                     line-height: 25px;
+                }
+
+                @media screen and (max-width:750px) {
+                    font-size: 18px;
                 }
 
                 span {
@@ -83,23 +82,19 @@
         }
 
         .right-container {
-            font-size: var(--heading-para);
+            width: 30%;
+            font-size: var(--card-para);
             font-weight: 400;
-
-            // @media screen and (max-width:1400px) {
-            //     font-size: 18px;
-
-            // }
-
-            // @media screen and (max-width:120px) {
-            //     font-size: 15px;
-
-            // }
-
-            // @media screen and (max-width:990px) {
-            //     font-size: 13px;
-
-            // }
+            @media screen and (max-width:1400px) {
+                width: 50%;
+            }
+            @media screen and (max-width:1200px) {
+                width: 70%;
+            }
+            @media screen and (max-width:990px) {
+                gap: 100%;
+            }
+            
         }
     }
 
@@ -135,12 +130,6 @@
             .icon {
                 img {
                     height: 45px;
-                    // @media screen and (max-width:1400px) {
-                    //     height: 60px;
-                    // }
-                    // @media screen and (max-width:1200px) {
-                    //     height: 50px;
-                    // }
                 }
             }
 
@@ -158,33 +147,29 @@
 
             .card-info {
                 line-height: 35px;
+                @media screen and (max-width:990px) {
+                    line-height: 20px;
+                }
+
 
                 h5 {
                     font-weight: 700;
                     font-size: var(--card-heading);
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width:990px) {
                         font-size: 18px;
                     }
 
-                    @media screen and (max-width:990px) {
+                    @media screen and (max-width:750px) {
                         font-size: 15px;
                     }
 
-                    // @media screen and (max-width:1200px) {
-                    //     font-size: 18px;
-                    // }
-
-                    // @media screen and (max-width:1400px) {
-                    //     font-size: 15px;
-                    // }
                 }
 
                 a {
                     font-weight: 400;
-                    font-size: var(--heading-para);
+                    font-size: var(--card-para);
                     color: #F1B211;
-
 
                     @media screen and (max-width:1200px) {
                         font-size: 13px;
@@ -275,10 +260,12 @@
                 font-size: var(--card-heading);
                 font-weight: bold;
                 margin-bottom: 9px;
-
-                // @media screen and (max-width:1200px) {
-                //     font-size: 23px;
-                // }
+                @media screen and (max-width:990px) {
+                    font-size: 18px;
+                }
+                 @media screen and (max-width:750px) {
+                    font-size: 15px;
+                }
 
             }
 
@@ -304,7 +291,7 @@
                     border: 1px solid #F1B211;
                     border-radius: 10px;
                     padding: 10px 15px;
-                    font-size: var(--heading-para);
+                    font-size: var(--card-para);
                     color: #00A859;
 
                     @media screen and (max-width:910px) {
@@ -320,8 +307,7 @@
                     border-radius: 10px;
                     font-weight: bold;
                     color: white;
-                    // font-size: 22px;
-                    font-size: var(--heading-para);
+                    font-size: var(--card-para);
                     font-weight: bold;
                     outline: none;
                     border: 1px solid #F1B211;

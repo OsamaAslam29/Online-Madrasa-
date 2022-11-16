@@ -20,10 +20,6 @@ const arr = [
     img: home,
     heading: "Lorem Ipsum",
   },
-  {
-    img: home,
-    heading: "Lorem Ipsum",
-  },
 ];
 const HomeSlider = () => {
   var settings = {

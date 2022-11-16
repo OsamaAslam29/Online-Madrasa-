@@ -3,7 +3,6 @@
     padding-top: 4rem;
 
     .absolute__images {
-        // position: absolute;
         padding-left: 15rem;
         margin-bottom: -13rem;
         @media screen and (max-width:1600px) {
@@ -35,6 +34,8 @@
             img {
                 width: 500px;
                 height: 600px;
+                border-radius: 20px;
+                background-size: 100% 100%;
                 @media screen and (max-width:1600px) {
                     width: 400px;
                     height: 554px;
@@ -44,11 +45,11 @@
                     height: 454px;
                 }
                 @media screen and (max-width:800px) {
-                    width: 300px;
-                    height: 404px;
+                    width: 290px;
+                    height: 390px;
                 }
                 @media screen and (max-width:550px) {
-                    width: 200px;
+                    width: 180px;
                     height: 274px;
                 }
 
@@ -56,11 +57,11 @@
 
             .small {
                 position: absolute;
-                left: 20rem;
+                left: 25rem;
                 bottom: 6rem;
                 @media screen and (max-width:1600px) {
                     bottom: 4rem;
-                    left: 18rem;
+                    left: 20rem;
 
 
                 }
@@ -73,19 +74,25 @@
 
                 }
                 @media screen and (max-width:550px) {
-                    left: 15rem;
+                    left: 17rem;
+                    bottom: 2rem;
+
+
+                }
+                @media screen and (max-width:550px) {
+                    left: 14rem;
                     bottom: 2rem;
 
 
                 }
 
                 img {
-                    width: 500px;
-                    height: 394px;
+                    width: 280px;
+                    height: 355px;
 
                     @media screen and (max-width:1600px) {
-                        width: 350px;
-                        height: 354px;
+                        width: 270px;
+                        height: 330px;
                     }
                     @media screen and (max-width:1400px) {
                         width: 220px;
@@ -96,7 +103,7 @@
                         height: 200px;
                     }
                     @media screen and (max-width:550px) {
-                        width: 100px;
+                        width: 120px;
                         height: 180px;
                     }
                 }

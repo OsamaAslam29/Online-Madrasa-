@@ -3,15 +3,14 @@ import './Card.scss'
 import fb from "../../Assets/fb.png"
 import ints from "../../Assets/ints.png"
 import link from "../../Assets/link.png"
-import card from "../../Assets/card.png"
+import card from "../../Assets/Icon.png"
 
 const Cards = () => {
     return (
         <div className='card-container'>
             <div className="text">
-                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <h2>Join the Online Quran Community to Learn, Read, and Listen.</h2>
+                <div>As one of the leading online institutes for teaching the Quran online, <br /> we offer the best educational experiences for our students and the world.</div>
             </div>
             <div className="cards">
                 <div className="card">

@@ -1,17 +1,9 @@
 .footer-container {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer-Images.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.75)), url('../../Assets/Footer/Footer.jpg');
     display: flex;
     flex-direction: column;
     gap: 5rem;
-
-
-    .tomb {
-        img{
-            width: 100%;
-            margin-top: -1px;
-        }
-
-    }
+    justify-content: center;
 
     .flex-footer {
         width: 100%;
@@ -20,6 +12,8 @@
         flex-direction: column;
         justify-content: center;
         gap: 3rem;
+        margin-top: 7rem;
+
         @media screen and (max-width:600px) {
             padding-top: 0rem;
         }
@@ -32,22 +26,17 @@
                 height: 100px;
 
             }
+
             @media screen and (max-width:990px) {
                 height: 90px;
             }
         }
-
-        .text {
-            padding: 0 10px;
-            font-weight: 400;
-            font-size: var(--card-para);
+        p{
             color: white;
+            margin: 0;
+            font-size: var(--card-para);
             text-align: center;
-            @media screen and (max-width:990px) {
-                font-size: 14px;
-
-            }
-        }
+    }
     }
 
     .search-box {
@@ -61,6 +50,7 @@
             gap: 2rem;
 
         }
+
         @media screen and (max-width:770px) {
             flex-direction: column;
             align-items: center;
@@ -76,6 +66,7 @@
                 font-size: 28px;
 
             }
+
             @media screen and (max-width:990px) {
                 font-size: 23px;
 
@@ -94,6 +85,7 @@
             @media screen and (max-width:1200px) {
                 font-size: 18px;
             }
+
             @media screen and (max-width:1200px) {
                 font-size: 14px;
             }
@@ -109,9 +101,14 @@
                     width: 450px;
                     padding: 3px 20px;
                 }
+
                 @media screen and (max-width:990px) {
                     width: 350px;
                     padding: 1px 20px;
+                }
+
+                @media screen and (max-width:550px) {
+                    width: 332px;
                 }
 
             }
@@ -133,6 +130,7 @@
                 @media screen and (max-width:1200px) {
                     padding: 3px 20px;
                 }
+
                 @media screen and (max-width:990px) {
                     padding: 1px 20px;
                 }
@@ -140,95 +138,117 @@
         }
     }
 
-    .manage-display{
+    .manage-display {
         .info {
             display: flex;
             justify-content: center;
             gap: 10rem;
             padding-bottom: 5rem;
-    
+
             @media screen and (max-width:1200px) {
                 gap: 6rem;
             }
-    
+
             @media screen and (max-width:990px) {
                 gap: 3rem;
             }
+
             @media screen and (max-width:770px) {
-                display: none;
+                flex-direction: column;
             }
-    
+
             .section {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-                
-    
+
+
                 @media screen and (max-width:1200px) {
                     gap: .5rem;
                 }
+
                 @media screen and (max-width:770px) {
                     width: 100%;
                     align-items: center;
                 }
-    
+
                 .heading {
                     display: flex;
                     flex-direction: column;
                     gap: .5rem;
-    
-                    
-    
+
+                    .icon {
+                        color: #fff;
+                        margin: 0 auto;
+                        display: none;
+
+                        @media screen and (max-width:770px) {
+                            display: block;
+                        }
+                    }
+
+
+
                     h5 {
                         font-size: var(--card-heading);
                         color: white;
                         font-weight: 700;
+
                         @media screen and (max-width:1200px) {
                             font-size: 18px;
                         }
+
                         @media screen and (max-width:990px) {
                             font-size: 15px;
                         }
                     }
-    
+
                     img {
                         width: 90px;
+
+                        @media screen and (max-width:770px) {
+                            display: none;
+                        }
                     }
-    
+
                 }
-    
+
                 .data {
                     color: white;
                     display: flex;
                     flex-direction: column;
                     gap: .5rem;
+
                     @media screen and (max-width:770px) {
                         width: 100%;
                         justify-content: center;
                         align-items: center;
                         display: none;
                     }
-    
+
                     div {
                         font-size: var(--card-para);
+
                         @media screen and (max-width:990px) {
                             font-size: 12px;
                         }
-                       
+
                     }
-    
+
                     .icons {
                         padding-top: 10px;
                         display: flex;
                         gap: 1rem;
-    
+
+
                         img {
                             height: 30px;
+
                         }
                     }
                 }
             }
         }
     }
-    
+
 }

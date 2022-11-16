@@ -1,11 +1,11 @@
 import React from 'react'
 import './Images.scss'
 import home from '../../Assets/homes.png'
-import image from '../../Assets/image.jpg'
 import ImageCard from './ImageCard'
 import Flip from 'react-reveal/Flip';
-import large from "../../Assets/large.jpg";
-import small from "../../Assets/small.svg";
+import large from "../../Assets/About Us/Large.jpg";
+import small from "../../Assets/About Us/Small.jpg";
+import image from '../../Assets/Services/Services.jpg'
 
 const Images = () => {
   return (

@@ -23,7 +23,7 @@
 
         .img-card {
             padding: 35px;
-            // max-width: 335px;
+            max-width: 310px;
             background: #FFFFFF;
             // box-shadow: 0px 4px 10px rgb(0 0 0 / 12%);
             box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
@@ -44,6 +44,7 @@
             }
             @media screen and (max-width:990px) {
                 align-items: center;
+                max-width: 100%;
 
             }
 
@@ -69,10 +70,10 @@
                     font-weight: 700;
                     font-size: var(--card-heading);
                     color: black;
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width:990px) {
                         font-size: 18px;
                     }
-                    @media screen and (max-width:990px) {
+                     @media screen and (max-width:750px) {
                         font-size: 15px;
                     }
 
@@ -82,6 +83,7 @@
                     font-size: var(--card-para);
                     color: #5a5555;
                     font-weight: 400;
+                    text-align: justify;
                     @media screen and (max-width:990px) {
                         text-align: center;
                     }

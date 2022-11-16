@@ -14,7 +14,7 @@ const Info = () => {
                     </div>
                     <div className="divider-line"></div>
                     <div className="right-container">
-                        Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.
+                    Although we do our services 100% online, and there is no need to visit physically,  still Our main head office is in Perth, Australia.
                     </div>
                 </div>
                 <div className="flex-cards">

@@ -15,7 +15,8 @@ const ImageCard = () => {
                     </div>
                     <div className="bio">
                         <h5>Our Mission</h5>
-                        <span> Lorem Ipsum is simply dummy <br /> text of the printing.</span>
+                        <span> Our mission is to incorporate the whole Islamic community
+                            worldwide and gather them to learn the Quran.</span>
                     </div>
                 </div>
                 <div className="img-card">
@@ -24,7 +25,8 @@ const ImageCard = () => {
                     </div>
                     <div className="bio">
                         <h5>Our Vision</h5>
-                        <span> Lorem Ipsum is simply dummy <br /> text of the printing.</span>
+                        <span> The vision of <a href="#">Madrasa.io</a> is to make Quran Learning easily
+                            accessible throughout the world.</span>
                     </div>
                 </div>
                 <div className="img-card">
@@ -33,7 +35,7 @@ const ImageCard = () => {
                     </div>
                     <div className="bio">
                         <h5>Our Goals</h5>
-                        <span> Lorem Ipsum is simply dummy <br /> text of the printing.</span>
+                        <span> As Muslims, our goal should be to spread Allah's final word worldwide.</span>
                     </div>
                 </div>
             </div>

@@ -18,11 +18,11 @@
         font-weight: 400;
         font-size: var(--main-heading);
 
-        @media only screen and (max-width: 1200px) {
+        @media only screen and (max-width: 990px) {
             font-size: 20px;
         }
 
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 750px) {
             font-size: 18px;
         }
     }

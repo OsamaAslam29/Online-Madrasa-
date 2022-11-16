@@ -81,10 +81,10 @@
                 font-weight: 700;
                 font-size: var(--main-heading);
                 color: white;
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width:990px) {
                     font-size: 20px;
                 }
-                @media screen and (max-width:990px) {
+                 @media screen and (max-width:750px) {
                     font-size: 18px;
                 }
 
@@ -95,8 +95,7 @@
                 height: 55px;
                 padding: 10px 20px;
                 font-weight: 400;
-                // font-size: 28px;
-                font-size: var(--heading-para);
+                font-size: var(--card-para);
                 background-color: transparent;
                 color: white;
                 border: 1px solid white;
@@ -114,6 +113,7 @@
                     width: 330px;
 
                 }
+                
 
             }
 
@@ -128,7 +128,7 @@
                 background-color: #00A859;
                 border-radius: 10px;
                 font-weight: 400;
-                font-size: var(--heading-para);
+                font-size: var(--card-para);
                 color: white;
                 border: 1px solid white;
                 cursor: pointer;
