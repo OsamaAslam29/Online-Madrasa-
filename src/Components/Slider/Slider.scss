@@ -28,9 +28,19 @@ li.slick-active button:before {
   width: 290px !important;
   height: 160px;
   background-color: white;
-  gap: 10px;
+  .icon{
+    color: #F1B211;
+    font-size: 50px;
+    @media screen and (max-width:750px) {
+      font-size: 40px;
+  }
+  }
+  @media screen and (max-width:1000px) {
+    .slide_parent {
+      width: 400px !important;
+    }
+  }
 }
-
 .slick-dots li button:before {
   font-size: 16px;
   line-height: 20px;
@@ -145,11 +155,36 @@ li.slick-active button:before {
   }
   .welcome-section{
     position: absolute;
-    top: 106px;
+    top: 156px;
     left: 100px;
+    color: white;
+    @media screen and (max-width:800px) {
+      top: 96px;
+      left: 40px;
+    }
+    @media screen and (max-width:550px) {
+      top: 96px;
+      left: 0px;
+    }
     h2{
-      font-size: var(--main-heading);
+      font-size: 45px;
       font-weight: 700;
+      text-align: center;
+      @media screen and (max-width:800px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width:550px) {
+        font-size: 25px;
+
+      }
+    }
+    p{
+      text-align: center;
+      padding-top: .5rem;
+      font-size: 18px;
+      @media screen and (max-width:800px) {
+        font-size: 15px;
+      }
     }
   }
 }

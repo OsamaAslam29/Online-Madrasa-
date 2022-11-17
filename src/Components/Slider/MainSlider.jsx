@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeSlider from './Slider'
+import { Fade } from 'react-reveal'
 
 const MainSlider = () => {
   return (
@@ -9,12 +10,14 @@ const MainSlider = () => {
               <HomeSlider/>
           </div>
               <div className="welcome-section">
-                <h2>Welcome to <a href="#">Madrasa.io</a></h2>
-                <p>A Place to Learn Quran online with Tajweed from Best Quran <br />Tutors</p>
+              <Fade top>
+                <h2>Welcome to Madrasa.io</h2>
+                <p>A Place to Learn Quran online with Tajweed from Best Quran Tutors</p>
+                </Fade>
               </div>
           
-    </div>
+    </div> 
   )
 }
 
-export default MainSlider
+export default MainSlider   

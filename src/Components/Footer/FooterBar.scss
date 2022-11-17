@@ -1,17 +1,9 @@
 .footer-bar {
-    height: 10vh;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #00A859;
-
-    @media only screen and (max-width: 1200px) {
-        height: 8vh;
-    }
-
-    @media only screen and (max-width: 990px) {
-        height: 8vh;
-    }
 
     footer {
         color: white;

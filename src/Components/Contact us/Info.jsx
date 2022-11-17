@@ -1,8 +1,13 @@
 import React from 'react'
 import './Info.scss'
-import first from '../../Assets/first.png'
+import first from '../../Assets/firsts (2).png'
 import second from '../../Assets/second.png'
 import third from '../../Assets/third.png'
+import location from '../../Assets/contact/Location.svg'
+import email from '../../Assets/contact/Email.svg'
+import phone from '../../Assets/contact/Phone.svg'
+
+
 
 const Info = () => {
     return (
@@ -20,7 +25,7 @@ const Info = () => {
                 <div className="flex-cards">
                     <div className="card-data">
                         <div className="icon">
-                            <img src={first} alt="" />
+                            <img src={location} alt="" />
                         </div>
                         <div className="card-info">
                             <h5>Visit Us:</h5>
@@ -29,7 +34,7 @@ const Info = () => {
                     </div>
                     <div className="card-data">
                         <div className="icon">
-                            <img src={second} alt="" />
+                            <img src={email} alt="" />
                         </div>
                         <div className="card-info">
                             <h5>Email Us:</h5>
@@ -38,7 +43,7 @@ const Info = () => {
                     </div>
                     <div className="card-data">
                         <div className="icon">
-                            <img src={third} alt="" />
+                            <img src={phone} alt="" />
                         </div>
                         <div className="card-info">
                             <h5>Phone:</h5>

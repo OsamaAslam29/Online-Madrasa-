@@ -65,11 +65,11 @@
 
         .divider-line {
             border: 1px solid #F1B211;
-            height: 80px;
+            height: 75px;
 
 
             @media screen and (max-width:1200px) {
-                height: 60px;
+                height: 55px;
             }
 
             @media screen and (max-width:990px) {
@@ -85,16 +85,19 @@
             width: 30%;
             font-size: var(--card-para);
             font-weight: 400;
+
             @media screen and (max-width:1400px) {
                 width: 50%;
             }
+
             @media screen and (max-width:1200px) {
-                width: 70%;
+                width: 50%;
             }
-            @media screen and (max-width:990px) {
-                gap: 100%;
+
+            @media screen and (max-width:750px) {
+                width: 100%;
             }
-            
+
         }
     }
 
@@ -129,7 +132,15 @@
 
             .icon {
                 img {
-                    height: 45px;
+                    height: 50px;
+                    width: 50px;
+
+                    @media screen and (max-width:750px) {
+                        height: 40px;
+                        width: 40px;
+                    }
+
+
                 }
             }
 
@@ -147,6 +158,7 @@
 
             .card-info {
                 line-height: 35px;
+
                 @media screen and (max-width:990px) {
                     line-height: 20px;
                 }
@@ -260,10 +272,12 @@
                 font-size: var(--card-heading);
                 font-weight: bold;
                 margin-bottom: 9px;
+
                 @media screen and (max-width:990px) {
                     font-size: 18px;
                 }
-                 @media screen and (max-width:750px) {
+
+                @media screen and (max-width:750px) {
                     font-size: 15px;
                 }
 

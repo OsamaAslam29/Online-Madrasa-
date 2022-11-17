@@ -6,11 +6,11 @@ import logo from '../../Assets/logo.png'
 
 import home from '../../Assets/Menu/Home.svg'
 import about from '../../Assets/Menu/About.svg'
-// import mosque from '../../Assets/Menu/Mosque.svg'
 import services from '../../Assets/Menu/Services.svg'
-// import mosque from '../../Assets/Menu/Mosque.svg'
 import quran from '../../Assets/Menu/Quran.svg'
-// import quran from '../../Assets/Menu/Quran.svg'
+import mosque from '../../Assets/Menu/Mosque.svg'
+import register from '../../Assets/Menu/Register.svg'
+import contact from '../../Assets/Menu/Phone.svg'
 
 
 
@@ -52,36 +52,39 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className='main'>
+      <Fade top>
         <div className="logo">
             <img src={logo} alt="" />
         </div>
+        </Fade>
         <div className="nav">
+          
           <div className="mobile_icon" to="/Home">
             <img src={home} alt="" />
             <div>Home</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={about} alt="" />
             <div>About </div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={services} alt="" />
             <div>Services</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={quran} alt="" />
             <div>Quran</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={mosque} alt="" />
             <div> Mosques</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={register} alt="" />
             <div>Register</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            <img src={contact} alt="" />
             <div>Contact</div>
           </div>
           
@@ -103,6 +106,7 @@ const Navbar = () => {
         </Fade>
 
         <div className="green-box">
+        <Fade top>
           <div className="flex-boxes">
             <div className="box">
               <img src={home} alt="" />
@@ -121,18 +125,19 @@ const Navbar = () => {
               <div>Quran</div>
             </div>
             <div className="box">
-              <img src={home} alt="" />
+              <img src={mosque} alt="" />
               <div>Mosques</div>
             </div>
             <div className="box">
-              <img src={quran} alt="" />
+              <img src={register} alt="" />
               <div>Register</div>
             </div>
             <div className="box">
-              <img src={quran} alt="" />
+              <img src={contact} alt="" />
               <div>Contact</div>
             </div>
           </div>
+        </Fade>  
         </div>
         {/* ************* Mobile menu ************ */}
 

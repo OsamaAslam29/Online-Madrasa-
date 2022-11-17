@@ -1,8 +1,9 @@
 import React from 'react'
 import './ImageCard.scss'
-import mission from '../../Assets/mission.png'
-import vision from '../../Assets/vision.png'
-import goal from '../../Assets/goal.png'
+import mission from '../../Assets/About Us/mission.svg'
+import vision from '../../Assets/About Us/vision.svg'
+import goal from '../../Assets/About Us/goal.svg'
+
 
 
 const ImageCard = () => {
@@ -25,7 +26,7 @@ const ImageCard = () => {
                     </div>
                     <div className="bio">
                         <h5>Our Vision</h5>
-                        <span> The vision of <a href="#">Madrasa.io</a> is to make Quran Learning easily
+                        <span> The vision of Madrasa.io is to make Quran Learning easily
                             accessible throughout the world.</span>
                     </div>
                 </div>

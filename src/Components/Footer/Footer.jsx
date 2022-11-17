@@ -6,9 +6,10 @@ import arrow from '../../Assets/arrow.png'
 import feb from '../../Assets/feb.png'
 import insta from '../../Assets/insta.png'
 import ins from '../../Assets/in.png'
-import tomb from '../../Assets/masque.png'
 import Flip from 'react-reveal/Flip';
 import MenuIcon from '@mui/icons-material/Menu';
+import tomb from '../../Assets/masque.png'
+import Rotate from 'react-reveal/Rotate';
 
 
 
@@ -44,23 +45,13 @@ const Footer = () => {
 
         }
     }
-    const Contact = () => {
-        if (document.getElementById("Contact").style.display === "none") {
-
-            document.getElementById("Contact").style.display = "flex"
-        }
-        else {
-            document.getElementById("Contact").style.display = "none"
-
-        }
-    }
     return (
         <>
 
             <div className="footer-container">
-                {/* <div className="tomb">
+                <div className="tomb">
                     <img src={tomb} alt="" />
-                </div> */}
+                </div>
                 <div className="flex-footer">
                     <Flip top>
                         <div>
@@ -68,8 +59,7 @@ const Footer = () => {
                         </div>
                     </Flip>
                     <div className='text'>
-                        <p className='text'>The whole learning process is extremely simple. Yet! We <br /></p>
-                        <p className='text'>are available 24/7 to support our honorable teachers and students. </p>
+                        <p className='text'>The whole learning process is extremely simple. Yet! We are available 24/7 to support our honorable teachers and students.</p>
                     </div>
                 </div>
                 <div className="search-box">
@@ -90,41 +80,45 @@ const Footer = () => {
 
                             </div>
                             <div className="data" id='site'>
-                                <div>Home</div>
-                                <div>About Us</div>
-                                <div>Our Services</div>
-                                <div>Programs & Events</div>
-                                <div>Latest News</div>
+                                <Rotate bottom right>
+                                    <div>Home</div>
+                                    <div>About Us</div>
+                                    <div>Our Services</div>
+                                    <div>Programs & Events</div>
+                                </Rotate>
                             </div>
 
                         </div>
                         <div className="section">
                             <div className="heading">
-                                <h5>Learning</h5>
+                                <h5>Support</h5>
                                 <img src={arrow} alt="" />
                                 <MenuIcon className='icon' onClick={Learning} />
                             </div>
                             <div className="data" id='Learning'>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                            </div>
+                                <Rotate bottom right>
 
+                                    <div>Help & Support </div>
+                                    <div>Trust & Safety</div>
+                                    <div>Teaching with Madrasa.io </div>
+                                    <div>Studying with Madrasa.io</div>
+                                </Rotate>
+                            </div>
                         </div>
                         <div className="section">
                             <div className="heading">
-                                <h5>Our Services</h5>
+                                <h5>Legal Area</h5>
                                 <img src={arrow} alt="" />
                                 <MenuIcon className='icon' onClick={Services} />
                             </div>
                             <div className="data" id='Services'>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
-                                <div>Lorem Ipsum </div>
+                                <Rotate bottom right>
+                                    <div>Terms & Conditions </div>
+                                    <div>Refund Policy</div>
+                                    <div>Privacy Policy</div>
+                                    <div>Cookie Policy</div>
+                                </Rotate>
+
                             </div>
 
                         </div>
@@ -132,17 +126,18 @@ const Footer = () => {
                             <div className="heading" >
                                 <h5>Contact Us</h5>
                                 <img src={arrow} alt="" />
-                                <MenuIcon className='icon' onClick={Contact} />
                             </div>
-                            <div className="data" id='Contact'>
-                                <div>Perth, Australia</div>
-                                <div>Phone: +61-000-123-4567</div>
-                                <div>Email: example@example.ios</div>
-                                <div className="icons">
-                                    <img src={feb} alt="" />
-                                    <img src={insta} alt="" />
-                                    <img src={ins} alt="" />
-                                </div>
+                            <div className="contact" >
+                                <Rotate bottom right>
+                                    <div>Perth, Australia</div>
+                                    <div>Phone: +61-000-123-4567</div>
+                                    <div>Email: example@example.ios</div>
+                                    <div className="icons">
+                                        <img src={feb} alt="" />
+                                        <img src={insta} alt="" />
+                                        <img src={ins} alt="" />
+                                    </div>
+                                </Rotate>
                             </div>
 
                         </div>

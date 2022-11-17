@@ -2,23 +2,31 @@ import React from "react";
 import Slider from "react-slick";
 import "./Slider.scss";
 import home from "../../Assets/home.svg";
+import Fade from 'react-reveal/Fade';
+
+
+import { AiOutlineFileSearch } from 'react-icons/ai';
+import { TbHandClick } from 'react-icons/tb';
+import { MdOutlineQuiz } from 'react-icons/md';
+import { MdOutlineFreeCancellation } from 'react-icons/md';
+
 
 const arr = [
   {
-    img: home,
-    heading: "Lorem Ipsum",
+    img: <AiOutlineFileSearch/>,
+    heading: "Screening",
   },
   {
-    img: home,
-    heading: "Lorem Ipsum",
+    img: <TbHandClick/>,
+    heading: "Easy to Use",
   },
   {
-    img: home,
-    heading: "Lorem Ipsum",
+    img: <MdOutlineQuiz/>,
+    heading: "Quiz System",
   },
   {
-    img: home,
-    heading: "Lorem Ipsum",
+    img: <MdOutlineFreeCancellation/>,
+    heading: "Cancel ",
   },
 ];
 const HomeSlider = () => {
@@ -30,7 +38,7 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -67,12 +75,15 @@ const HomeSlider = () => {
       <Slider {...settings}>
         {arr.map((data, i) => {
           return (
+            <Fade top>
             <div className="slide_parent" key={i}>
-                <div>
-                  <img src={data.img} alt="Icons" />
+              
+                <div className="icon">
+                  {data.img}
                 </div>
                 <h5>{data.heading}</h5>
             </div>
+                </Fade>
           );
         })}
       </Slider>

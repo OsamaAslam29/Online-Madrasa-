@@ -6,6 +6,10 @@ import Flip from 'react-reveal/Flip';
 import large from "../../Assets/About Us/Large.jpg";
 import small from "../../Assets/About Us/Small.jpg";
 import image from '../../Assets/Services/Services.jpg'
+import { AiOutlineFileSearch } from 'react-icons/ai';
+import { MdOutlineQuiz } from 'react-icons/md';
+import { MdOutlineFreeCancellation } from 'react-icons/md';
+import { MdOutlineHealthAndSafety } from 'react-icons/md';
 
 const Images = () => {
   return (
@@ -26,65 +30,65 @@ const Images = () => {
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  <img src={home} alt="" />
+                  {/* <img src={home} alt="" /> */}
+                  <AiOutlineFileSearch className='icon'/>
                 </div>
                 <div>
-                  <a href="#">Lorem Ipsum</a>
+                  <a href="#">Screening</a>
                 </div>
                 <span>
-                  Lorem Ipsum is simply dummy text of <br />
-                  the printing and typesetting industry.
-                  <br /> Lorem Ipsum is simply dummy
+                Every teacher is screened for expertise <br /> and is  only accepted to the platform <br />if they meet Madrasa.io’s standards.
                 </span>
               </div>
             </Flip>
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  <img src={home} alt="" />
+                  {/* <img src={home} alt="" /> */}
+                  <MdOutlineQuiz className='icon'/>
+
                 </div>
                 <div>
-                  <a href="#">Lorem Ipsum</a>
+                  <a href="#">Quiz system</a>
                 </div>
                 <span>
-                  Lorem Ipsum is simply dummy text of <br />
-                  the printing and typesetting industry.
-                  <br /> Lorem Ipsum is simply dummy
+                You can see your quizzes rated along with<br /> the teacher’s remarks at any time. Especially  <br />helpful in tracking children’s progress.
                 </span>
               </div>
             </Flip>
           </div>
           <div className="middle-image">
             <img src={image} alt="" />
+
           </div>
           <div className="flex-card">
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  <img src={home} alt="" />
+                  {/* <img src={home} alt="" /> */}
+                  <MdOutlineFreeCancellation className='icon'/>
+
                 </div>
                 <div>
-                  <a href="#">Lorem Ipsum</a>
+                  <a href="#">Cancel Anytime</a>
                 </div>
                 <span>
-                  Lorem Ipsum is simply dummy text of <br />
-                  the printing and typesetting industry.
-                  <br /> Lorem Ipsum is simply dummy
+                If you are unsatisfied with your teacher, you<br /> can end  the contract the next month and<br /> find another tutor.
                 </span>
               </div>
             </Flip>
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  <img src={home} alt="" />
+                  {/* <img src={home} alt="" /> */}
+                  <MdOutlineHealthAndSafety className='icon'/>
+
                 </div>
                 <div>
-                  <a href="#">Lorem Ipsum</a>
+                  <a href="#">A safe place to learn</a>
                 </div>
                 <span>
-                  Lorem Ipsum is simply dummy text of <br />
-                  the printing and typesetting industry.
-                  <br /> Lorem Ipsum is simply dummy
+                Our screening means you and your children learn <br />in a safe environment. Any inappropriate <br />actions are taken seriously.
                 </span>
               </div>
             </Flip>
