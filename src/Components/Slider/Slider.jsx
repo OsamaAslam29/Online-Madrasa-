@@ -13,19 +13,19 @@ import { MdOutlineFreeCancellation } from 'react-icons/md';
 
 const arr = [
   {
-    img: <AiOutlineFileSearch/>,
+    img: <AiOutlineFileSearch />,
     heading: "Screening",
   },
   {
-    img: <TbHandClick/>,
+    img: <TbHandClick />,
     heading: "Easy to Use",
   },
   {
-    img: <MdOutlineQuiz/>,
+    img: <MdOutlineQuiz />,
     heading: "Quiz System",
   },
   {
-    img: <MdOutlineFreeCancellation/>,
+    img: <MdOutlineFreeCancellation />,
     heading: "Cancel ",
   },
 ];
@@ -65,7 +65,7 @@ const HomeSlider = () => {
           slidesToScroll: 1,
           arrows: true,
           initialSlide: 0,
-          
+
         },
       },
     ],
@@ -73,17 +73,17 @@ const HomeSlider = () => {
   return (
     <div className="parent">
       <Slider {...settings}>
-        {arr.map((data, i) => {
+        {arr.map((data, index) => {
           return (
-            <Fade top>
-            <div className="slide_parent" key={i}>
-              
+            <Fade top  key={index.toString()}>
+              <div className="slide_parent">
+
                 <div className="icon">
                   {data.img}
                 </div>
                 <h5>{data.heading}</h5>
-            </div>
-                </Fade>
+              </div>
+            </Fade>
           );
         })}
       </Slider>

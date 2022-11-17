@@ -58,9 +58,11 @@ const Footer = () => {
                             <img src={logo} alt="Error" />
                         </div>
                     </Flip>
+                    <Rotate bottom right>
                     <div className='text'>
                         <p className='text'>The whole learning process is extremely simple. Yet! We are available 24/7 to support our honorable teachers and students.</p>
                     </div>
+                    </Rotate>
                 </div>
                 <div className="search-box">
                     <div className="text">Subscribe For Latest Updates</div>

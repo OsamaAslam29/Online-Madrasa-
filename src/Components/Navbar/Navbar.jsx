@@ -4,25 +4,23 @@ import Fade from 'react-reveal/Fade';
 import logo from '../../Assets/logo.png'
 // import home from "../../Assets/thirds.png";
 
-import home from '../../Assets/Menu/Home.svg'
-import about from '../../Assets/Menu/About.svg'
-import services from '../../Assets/Menu/Services.svg'
-import quran from '../../Assets/Menu/Quran.svg'
-import mosque from '../../Assets/Menu/Mosque.svg'
-import register from '../../Assets/Menu/Register.svg'
-import contact from '../../Assets/Menu/Phone.svg'
-
-
-
+// import home from '../../Assets/Menu/Contect.svg'
+// import about from '../../Assets/Menu/About.svg'
+// import services from '../../Assets/Menu/Services.svg'
+// import quran from '../../Assets/Menu/Quran.svg'
+// import mosque from '../../Assets/Menu/Mosque.svg'
+// import contact from '../../Assets/Menu/Phone.svg'
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-// import HomeIcon from '@mui/icons-material/Home';
-// import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-// import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'; 
-// import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-// import PostAddOutlinedIcon from '@mui/icons-material/PostAddOutlined';
-// import AddIcCallOutlinedIcon from '@mui/icons-material/AddIcCallOutlined';
+
+
+import { AiOutlineHome } from 'react-icons/ai';
+import { BsGear } from 'react-icons/bs';
+import { GiInfo } from 'react-icons/gi';
+import { AiOutlineBell } from 'react-icons/ai';
+import { AiOutlineTeam } from 'react-icons/ai';
+import { BsTelephone } from 'react-icons/bs';
 
 
 
@@ -60,31 +58,38 @@ const Navbar = () => {
         <div className="nav">
           
           <div className="mobile_icon" to="/Home">
-            <img src={home} alt="" />
+            {/* <img src={home} alt="" /> */}
+            <AiOutlineHome className="icon" />
             <div>Home</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={about} alt="" />
-            <div>About </div>
+            {/* <img src={about} alt="" /> */}
+            <GiInfo className="icon" />
+
+            <div style={{marginTop:"-10px"}}>About </div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={services} alt="" />
-            <div>Services</div>
+            {/* <img src={services} alt="" /> */}
+            <BsGear className="icon" />
+
+            <div style={{marginTop:"-10px"}}>Services</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={quran} alt="" />
-            <div>Quran</div>
+            {/* <img src={quran} alt="" /> */}
+            <AiOutlineBell className="icon" />
+
+            <div style={{marginTop:"-10px"}}>Suscribe</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={mosque} alt="" />
-            <div> Mosques</div>
+            {/* <img src={mosque} alt="" /> */}
+            <AiOutlineTeam className="icon" />
+
+            <div>Team</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            <img src={register} alt="" />
-            <div>Register</div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            <img src={contact} alt="" />
+            {/* <img src={contact} alt="" /> */}
+            <BsTelephone className="icon" />
+
             <div>Contact</div>
           </div>
           
@@ -109,31 +114,34 @@ const Navbar = () => {
         <Fade top>
           <div className="flex-boxes">
             <div className="box">
-              <img src={home} alt="" />
+              {/* <img src={home} alt="" /> */}
+              <AiOutlineHome className="icon" />
               <div>Home</div>
             </div>
             <div className="box">
-              <img src={about} alt="" />
+              {/* <img src={home} alt="" /> */}
+              <GiInfo className="icon" />
+
               <div>About</div>
             </div>
             <div className="box">
-              <img src={services} alt="" />
+              {/* <img src={home} alt="" /> */}
+              <BsGear className="icon" />
               <div>Services</div>
             </div>
             <div className="box">
-              <img src={quran} alt="" />
-              <div>Quran</div>
+              {/* <img src={home} alt="" /> */}
+              <AiOutlineBell className="icon" />
+              <div>Suscribe</div>
             </div>
             <div className="box">
-              <img src={mosque} alt="" />
-              <div>Mosques</div>
+              {/* <img src={home} alt="" /> */}
+              <AiOutlineTeam className="icon" />
+              <div>Team</div>
             </div>
             <div className="box">
-              <img src={register} alt="" />
-              <div>Register</div>
-            </div>
-            <div className="box">
-              <img src={contact} alt="" />
+              {/* <img src={home} alt="" /> */}
+              <BsTelephone className="icon" />
               <div>Contact</div>
             </div>
           </div>

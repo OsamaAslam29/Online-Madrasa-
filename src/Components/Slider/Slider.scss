@@ -114,9 +114,9 @@ li.slick-active button:before {
   }
 
   h5 {
-    font-family: "Montserrat";
+    // font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: var(--card-heading);
     line-height: 27px;
     text-align: center;
@@ -132,17 +132,24 @@ li.slick-active button:before {
 .slider__main {
   height: 720px;
   position: relative;
+  background: url("../../Assets/Slider/01.jpg");
+  position: relative;
+  background-size: 100% 100%;
 
   @media screen and (max-width:1400px) {
     height: 600px;
   }
 
-  @media screen and (max-width:800px) {
-    height: 500px;
+  // @media screen and (max-width:800px) {
+  //   height: 500px;
+  // }
+  @media screen and (max-width:700px) {
+    background: url("../../Assets/Slider/Mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
-  background: url("../../Assets/Slider/01.jpg");
-  position: relative;
+  
 
   .slider__componet {
     position: absolute;
@@ -159,11 +166,11 @@ li.slick-active button:before {
     left: 100px;
     color: white;
     @media screen and (max-width:800px) {
-      top: 96px;
+      top: 160px;
       left: 40px;
     }
     @media screen and (max-width:550px) {
-      top: 96px;
+      top: 200px;
       left: 0px;
     }
     h2{

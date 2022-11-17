@@ -73,23 +73,29 @@
                 gap: 7px;
                 justify-content: center;
                 flex-direction: column;
+                
+                .icon{
+                    font-size: 30px;
+                    color: #fff;
 
-                img {
-                    height: 35px;
-                    width: 30px;
                 }
 
-                @media screen and (max-width:1400px) {
-                    height: 85px;
-                    width: 85px;
-                    gap: 5px;
-                }
+                // img {
+                //     height: 35px;
+                //     width: 30px;
+                // }
 
-                @media screen and (max-width:990px) {
-                    height: 70px;
-                    width: 70px;
-                    gap: 3px;
-                }
+                // @media screen and (max-width:1400px) {
+                //     height: 85px;
+                //     width: 85px;
+                //     gap: 5px;
+                // }
+
+                // @media screen and (max-width:990px) {
+                //     height: 70px;
+                //     width: 70px;
+                //     gap: 3px;
+                // }
 
                 div {
                     color: white;
@@ -128,19 +134,23 @@
     }
 
     .nav {
-        margin-top: 6rem;
+        margin-top: 7rem;
         display: flex;
         flex-direction: column;
         padding-left: 43px;
-        gap: 2.5rem;
+        gap: 3rem;
 
         .mobile_icon {
             display: flex;
             gap: 1rem;
             align-items: center;
-            img{
-                height: 35px;
-                width: 30px;
+            // img{
+            //     height: 35px;
+            //     width: 30px;
+            // }
+            .icon{
+                font-size: 25px;
+                color: #F1B211;
             }
 
             div {

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import Atom from './Components/Atoms/Atom';
 import Cards from './Components/Cards/Cards';
 import Contact from './Components/Contact us/Contact';
 import Footer from './Components/Footer/Footer';
