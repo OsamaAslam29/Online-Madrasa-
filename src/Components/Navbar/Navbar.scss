@@ -160,3 +160,15 @@
         }
     }
 }
+
+.scroll_nav{
+    display: none;
+}
+.show_scroll_nav{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    left: 0;
+    right: 0;
+}

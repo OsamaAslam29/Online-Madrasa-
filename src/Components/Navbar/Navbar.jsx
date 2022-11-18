@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import Fade from 'react-reveal/Fade';
 import logo from '../../Assets/logo.png'
@@ -21,10 +21,21 @@ import { GiInfo } from 'react-icons/gi';
 import { AiOutlineBell } from 'react-icons/ai';
 import { AiOutlineTeam } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
+import Scroll from '../Scroll/Scroll';
 
 
 
 const Navbar = () => {
+
+  const [showNav, setShowNav] = useState(false)
+  const changingNavBar = () => {
+    if (window.scrollY >= 80) {
+      setShowNav(true)
+    } else {
+      setShowNav(false)
+    }
+  }
+  window.addEventListener("scroll", changingNavBar)
   const [state, setState] = React.useState({
 
     left: false,
@@ -50,13 +61,13 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className='main'>
-      <Fade top>
-        <div className="logo">
+        <Fade top>
+          <div className="logo">
             <img src={logo} alt="" />
-        </div>
+          </div>
         </Fade>
         <div className="nav">
-          
+
           <div className="mobile_icon" to="/Home">
             {/* <img src={home} alt="" /> */}
             <AiOutlineHome className="icon" />
@@ -66,19 +77,19 @@ const Navbar = () => {
             {/* <img src={about} alt="" /> */}
             <GiInfo className="icon" />
 
-            <div style={{marginTop:"-10px"}}>About </div>
+            <div style={{ marginTop: "-10px" }}>About </div>
           </div>
           <div className="mobile_icon" to="/Home">
             {/* <img src={services} alt="" /> */}
             <BsGear className="icon" />
 
-            <div style={{marginTop:"-10px"}}>Services</div>
+            <div style={{ marginTop: "-10px" }}>Services</div>
           </div>
           <div className="mobile_icon" to="/Home">
             {/* <img src={quran} alt="" /> */}
             <AiOutlineBell className="icon" />
 
-            <div style={{marginTop:"-10px"}}>Suscribe</div>
+            <div style={{ marginTop: "-10px" }}>Suscribe</div>
           </div>
           <div className="mobile_icon" to="/Home">
             {/* <img src={mosque} alt="" /> */}
@@ -92,7 +103,7 @@ const Navbar = () => {
 
             <div>Contact</div>
           </div>
-          
+
         </div>
       </div>
 
@@ -103,7 +114,10 @@ const Navbar = () => {
   return (
 
     <>
-      <div className="nav-container">
+      <div className={showNav ? "show_scroll_nav" : "scroll_nav"}>
+        <Scroll />
+      </div>
+      <div style={showNav ? { display: "none" } : {}} className="nav-container">
         <Fade top>
           <div className="logo">
             <img src={logo} alt="" />
@@ -111,41 +125,41 @@ const Navbar = () => {
         </Fade>
 
         <div className="green-box">
-        <Fade top>
-          <div className="flex-boxes">
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <AiOutlineHome className="icon" />
-              <div>Home</div>
-            </div>
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <GiInfo className="icon" />
+          <Fade top>
+            <div className="flex-boxes">
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <AiOutlineHome className="icon" />
+                <div>Home</div>
+              </div>
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <GiInfo className="icon" />
 
-              <div>About</div>
+                <div>About</div>
+              </div>
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <BsGear className="icon" />
+                <div>Services</div>
+              </div>
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <AiOutlineBell className="icon" />
+                <div>Suscribe</div>
+              </div>
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <AiOutlineTeam className="icon" />
+                <div>Team</div>
+              </div>
+              <div className="box">
+                {/* <img src={home} alt="" /> */}
+                <BsTelephone className="icon" />
+                <div>Contact</div>
+              </div>
             </div>
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <BsGear className="icon" />
-              <div>Services</div>
-            </div>
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <AiOutlineBell className="icon" />
-              <div>Suscribe</div>
-            </div>
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <AiOutlineTeam className="icon" />
-              <div>Team</div>
-            </div>
-            <div className="box">
-              {/* <img src={home} alt="" /> */}
-              <BsTelephone className="icon" />
-              <div>Contact</div>
-            </div>
-          </div>
-        </Fade>  
+          </Fade>
         </div>
         {/* ************* Mobile menu ************ */}
 
@@ -156,8 +170,8 @@ const Navbar = () => {
               <React.Fragment key={anchor}>
 
                 <div className="menu">
-                <Fade top>
-                  <MenuIcon onClick={toggleDrawer(anchor, true)} style={{ fontSize: "35px" }} />
+                  <Fade top>
+                    <MenuIcon onClick={toggleDrawer(anchor, true)} style={{ fontSize: "35px" }} />
                   </Fade>
                 </div>
                 <SwipeableDrawer
