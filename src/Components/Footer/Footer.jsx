@@ -59,9 +59,9 @@ const Footer = () => {
                         </div>
                     </Flip>
                     <Rotate bottom right>
-                    <div className='text'>
-                        <p className='text'>The whole learning process is extremely simple. Yet! We are available 24/7 to support our honorable teachers and students.</p>
-                    </div>
+                        <div className='text'>
+                            <p className='text'>The whole learning process is extremely simple. Yet! We are available 24/7 to support our honorable teachers and students.</p>
+                        </div>
                     </Rotate>
                 </div>
                 <div className="search-box">
@@ -92,11 +92,13 @@ const Footer = () => {
 
                         </div>
                         <div className="section">
-                            <div className="heading">
-                                <h5>Support</h5>
-                                <img src={arrow} alt="" />
-                                <MenuIcon className='icon' onClick={Learning} />
-                            </div>
+                            <Rotate bottom right>
+                                <div className="heading">
+                                    <h5>Support</h5>
+                                    <img src={arrow} alt="" />
+                                    <MenuIcon className='icon' onClick={Learning} />
+                                </div>
+                            </Rotate>
                             <div className="data" id='Learning'>
                                 <Rotate bottom right>
 
@@ -108,11 +110,13 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="section">
-                            <div className="heading">
-                                <h5>Legal Area</h5>
-                                <img src={arrow} alt="" />
-                                <MenuIcon className='icon' onClick={Services} />
-                            </div>
+                            <Rotate bottom right>
+                                <div className="heading">
+                                    <h5>Legal Area</h5>
+                                    <img src={arrow} alt="" />
+                                    <MenuIcon className='icon' onClick={Services} />
+                                </div>
+                            </Rotate>
                             <div className="data" id='Services'>
                                 <Rotate bottom right>
                                     <div>Terms & Conditions </div>
