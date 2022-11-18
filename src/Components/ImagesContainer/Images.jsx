@@ -1,6 +1,5 @@
 import React from 'react'
 import './Images.scss'
-import home from '../../Assets/homes.png'
 import ImageCard from './ImageCard'
 import Flip from 'react-reveal/Flip';
 import large from "../../Assets/About Us/Large.jpg";
@@ -30,7 +29,6 @@ const Images = () => {
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  {/* <img src={home} alt="" /> */}
                   <AiOutlineFileSearch className='icon'/>
                 </div>
                 <div>
@@ -44,7 +42,6 @@ const Images = () => {
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  {/* <img src={home} alt="" /> */}
                   <MdOutlineQuiz className='icon'/>
 
                 </div>
@@ -65,7 +62,6 @@ const Images = () => {
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  {/* <img src={home} alt="" /> */}
                   <MdOutlineFreeCancellation className='icon'/>
 
                 </div>
@@ -80,7 +76,6 @@ const Images = () => {
             <Flip top>
               <div className="image-card">
                 <div className="logo">
-                  {/* <img src={home} alt="" /> */}
                   <MdOutlineHealthAndSafety className='icon'/>
 
                 </div>

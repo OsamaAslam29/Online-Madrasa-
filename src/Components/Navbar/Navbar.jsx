@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.scss'
 import Fade from 'react-reveal/Fade';
 import logo from '../../Assets/logo.png'
+import Scroll from '../Scroll/Scroll';
 // import home from "../../Assets/thirds.png";
 
 // import home from '../../Assets/Menu/Contect.svg'
@@ -21,11 +22,12 @@ import { GiInfo } from 'react-icons/gi';
 import { AiOutlineBell } from 'react-icons/ai';
 import { AiOutlineTeam } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
-import Scroll from '../Scroll/Scroll';
 
 
 
 const Navbar = () => {
+
+  //  ****** Scroll Navbar ********
 
   const [showNav, setShowNav] = useState(false)
   const changingNavBar = () => {
@@ -40,6 +42,8 @@ const Navbar = () => {
 
     left: false,
   });
+
+
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -115,7 +119,9 @@ const Navbar = () => {
 
     <>
       <div className={showNav ? "show_scroll_nav" : "scroll_nav"}>
+      <Fade top>
         <Scroll />
+        </Fade>
       </div>
       <div style={showNav ? { display: "none" } : {}} className="nav-container">
         <Fade top>

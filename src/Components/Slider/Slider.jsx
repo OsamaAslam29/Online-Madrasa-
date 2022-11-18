@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Slider.scss";
-import home from "../../Assets/home.svg";
 import Fade from 'react-reveal/Fade';
 
 
@@ -26,7 +25,7 @@ const arr = [
   },
   {
     img: <MdOutlineFreeCancellation />,
-    heading: "Cancel ",
+    heading: "Cancel Anytime",
   },
 ];
 const HomeSlider = () => {

@@ -1,10 +1,11 @@
 import React from 'react'
 import './ImageCard.scss'
-import mission from '../../Assets/About Us/mission.svg'
-import vision from '../../Assets/About Us/vision.svg'
-import goal from '../../Assets/About Us/goal.svg'
 import Roll from 'react-reveal/Roll';
 import Fade from 'react-reveal/Fade';
+import {ReactComponent as Mission} from '../../Assets/About Us/mission.svg';
+import {ReactComponent as Vision} from '../../Assets/About Us/vision.svg';
+import {ReactComponent as Goal} from '../../Assets/About Us/goal.svg';
+
 
 
 
@@ -15,7 +16,8 @@ const ImageCard = () => {
               <Roll left>
                 <div className="img-card">
                     <div className="imgs">
-                        <img src={mission} alt="Error" />
+                        <Mission className='icon'/>
+
                     </div>
                     <div className="bio">
                         <h5>Our Mission</h5>
@@ -27,7 +29,7 @@ const ImageCard = () => {
                 <Fade bottom>
                 <div className="img-card">
                     <div className="imgs">
-                        <img src={vision} alt="Error" />
+                    <Vision className='icon'/>
                     </div>
                     <div className="bio">
                         <h5>Our Vision</h5>
@@ -39,7 +41,7 @@ const ImageCard = () => {
                 <Roll right>
                 <div className="img-card">
                     <div className="imgs">
-                        <img src={goal} alt="Error" />
+                    <Goal className='icon'/>
                     </div>
                     <div className="bio">
                         <h5>Our Goals</h5>

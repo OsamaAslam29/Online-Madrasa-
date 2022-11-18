@@ -53,6 +53,9 @@
                         height: 40px;
                         width: 40px;
                     }
+                    .icon{
+                        fill: #F1B211;
+                    }
             }
 
 
@@ -90,6 +93,8 @@
                     color: #5a5555;
                     font-weight: 400;
                     text-align: justify;
+                    font-family: 'Crimson Text', serif;
+
                     @media screen and (max-width:990px) {
                         text-align: center;
                     }

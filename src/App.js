@@ -5,7 +5,6 @@ import Contact from './Components/Contact us/Contact';
 import Footer from './Components/Footer/Footer';
 import Images from './Components/ImagesContainer/Images';
 import Navbar from './Components/Navbar/Navbar'
-import Scroll from './Components/Scroll/Scroll';
 import MainSlider from './Components/Slider/MainSlider';
 import Subscribe from './Components/Subscribe/Subscribe'
 
@@ -13,15 +12,13 @@ import Subscribe from './Components/Subscribe/Subscribe'
 function App() {
   return (
     <>
-    {/* <Scroll/> */}
       <Navbar />
       <MainSlider />
       <Images />
       <Subscribe />
       <Cards />
-      <Contact />
+      <Contact /> 
       <Footer />
-
     </>
   );
 }

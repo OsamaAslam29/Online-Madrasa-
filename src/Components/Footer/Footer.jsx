@@ -10,6 +10,7 @@ import Flip from 'react-reveal/Flip';
 import MenuIcon from '@mui/icons-material/Menu';
 import tomb from '../../Assets/masque.png'
 import Rotate from 'react-reveal/Rotate';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -75,12 +76,15 @@ const Footer = () => {
                 <div className="manage-display">
                     <div className="info">
                         <div className="section">
-                            <div className="heading">
-                                <h5>Site Links</h5>
-                                <img src={arrow} alt="" />
-                                <MenuIcon className='icon' onClick={displays} />
+                            <Fade left>
+                                <div className="heading">
+                                    <h5>Site Links</h5>
+                                    <img src={arrow} alt="" />
+                                    <MenuIcon className='icon' onClick={displays} />
 
-                            </div>
+                                </div>
+                            </Fade>
+
                             <div className="data" id='site'>
                                 <Rotate bottom right>
                                     <div>Home</div>
@@ -92,16 +96,15 @@ const Footer = () => {
 
                         </div>
                         <div className="section">
-                            <Rotate bottom right>
+                            <Fade right>
                                 <div className="heading">
                                     <h5>Support</h5>
                                     <img src={arrow} alt="" />
                                     <MenuIcon className='icon' onClick={Learning} />
                                 </div>
-                            </Rotate>
+                            </Fade>
                             <div className="data" id='Learning'>
                                 <Rotate bottom right>
-
                                     <div>Help & Support </div>
                                     <div>Trust & Safety</div>
                                     <div>Teaching with Madrasa.io </div>
@@ -110,13 +113,13 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="section">
-                            <Rotate bottom right>
+                            <Fade left>
                                 <div className="heading">
                                     <h5>Legal Area</h5>
                                     <img src={arrow} alt="" />
                                     <MenuIcon className='icon' onClick={Services} />
                                 </div>
-                            </Rotate>
+                            </Fade>
                             <div className="data" id='Services'>
                                 <Rotate bottom right>
                                     <div>Terms & Conditions </div>
@@ -127,12 +130,15 @@ const Footer = () => {
 
                             </div>
 
-                        </div>
+                        </div> 
                         <div className="section">
+                        <Fade right>
                             <div className="heading" >
                                 <h5>Contact Us</h5>
                                 <img src={arrow} alt="" />
                             </div>
+                            </Fade>
+                            <Fade right>
                             <div className="contact" >
                                 <Rotate bottom right>
                                     <div>Perth, Australia</div>
@@ -145,6 +151,8 @@ const Footer = () => {
                                     </div>
                                 </Rotate>
                             </div>
+                            </Fade>
+
 
                         </div>
                     </div>
