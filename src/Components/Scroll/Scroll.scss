@@ -1,0 +1,12 @@
+.scroll-container{
+    padding: 20px ;
+    background-color: black;
+    .menu{
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 0px 20px;
+            color: white;
+        }
+    }
+}
