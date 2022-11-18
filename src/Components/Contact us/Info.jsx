@@ -1,8 +1,5 @@
 import React from 'react'
 import './Info.scss'
-import first from '../../Assets/firsts (2).png'
-import second from '../../Assets/second.png'
-import third from '../../Assets/third.png'
 import location from '../../Assets/contact/Location.svg'
 import email from '../../Assets/contact/Email.svg'
 import phone from '../../Assets/contact/Phone.svg'

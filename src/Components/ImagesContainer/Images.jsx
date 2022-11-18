@@ -13,8 +13,8 @@ import { MdOutlineHealthAndSafety } from 'react-icons/md';
 const Images = () => {
   return (
     <>
-      <div className="images__main">
-        <div className="absolute__images">
+      <div className="images__main" >
+        <div className="absolute__images" id='about'>
           <div className="large">
             <img src={large} alt="" />
             <div className="small">
@@ -24,7 +24,7 @@ const Images = () => {
         </div>
         <ImageCard />
 
-        <div className="Image-container">
+        <div className="Image-container"  id='services'>
           <div className="flex-card">
             <Flip top>
               <div className="image-card">

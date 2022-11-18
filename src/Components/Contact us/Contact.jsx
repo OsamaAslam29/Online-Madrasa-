@@ -5,7 +5,7 @@ import Info from './Info'
 const Contact = () => {
     return (
         <>
-            <div className='contact-container'>
+            <div className='contact-container' id='contact'>
                 <h5>
                     Contact Us
                 </h5>

@@ -17,32 +17,32 @@ import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     const displays = () => {
-        if (document.getElementById("site").style.display === "none") {
+        if (document.getElementById("site").style.display === "flex") {
 
-            document.getElementById("site").style.display = "flex"
+            document.getElementById("site").style.display = "none"
         }
         else {
-            document.getElementById("site").style.display = "none"
+            document.getElementById("site").style.display = "flex"
 
         }
     }
     const Learning = () => {
-        if (document.getElementById("Learning").style.display === "none") {
+        if (document.getElementById("Learning").style.display === "flex") {
 
-            document.getElementById("Learning").style.display = "flex"
+            document.getElementById("Learning").style.display = "none"
         }
         else {
-            document.getElementById("Learning").style.display = "none"
+            document.getElementById("Learning").style.display = "flex"
 
         }
     }
     const Services = () => {
-        if (document.getElementById("Services").style.display === "none") {
+        if (document.getElementById("Services").style.display === "flex") {
 
-            document.getElementById("Services").style.display = "flex"
+            document.getElementById("Services").style.display = "none"
         }
         else {
-            document.getElementById("Services").style.display = "none"
+            document.getElementById("Services").style.display = "flex"
 
         }
     }

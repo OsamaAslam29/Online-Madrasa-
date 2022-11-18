@@ -118,9 +118,9 @@ const Navbar = () => {
   return (
 
     <>
-      <div className={showNav ? "show_scroll_nav" : "scroll_nav"}>
-      <Fade top>
-        <Scroll />
+      <div className={showNav ? "show_scroll_nav" : "scroll_nav"} >
+        <Fade top>
+          <Scroll />
         </Fade>
       </div>
       <div style={showNav ? { display: "none" } : {}} className="nav-container">
@@ -133,37 +133,31 @@ const Navbar = () => {
         <div className="green-box">
           <Fade top>
             <div className="flex-boxes">
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+              <a href="#home" className="box">
                 <AiOutlineHome className="icon" />
-                <div>Home</div>
-              </div>
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+                <a >Home</a>
+              </a>
+              <a href="#about" className="box">
                 <GiInfo className="icon" />
+                <a>About</a>
 
-                <div>About</div>
-              </div>
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+              </a>
+              <a href='#services' className="box">
                 <BsGear className="icon" />
-                <div>Services</div>
-              </div>
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+                <a >Services</a>
+              </a>
+              <a href='#subscribe' className="box">
                 <AiOutlineBell className="icon" />
-                <div>Suscribe</div>
-              </div>
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+                <a >Subscribe</a>
+              </a>
+              <a href='#team' className="box">
                 <AiOutlineTeam className="icon" />
-                <div>Team</div>
-              </div>
-              <div className="box">
-                {/* <img src={home} alt="" /> */}
+                <a >Team</a>
+              </a>
+              <a href='#contact' className="box">
                 <BsTelephone className="icon" />
-                <div>Contact</div>
-              </div>
+                <a >Contact</a>
+              </a>
             </div>
           </Fade>
         </div>

@@ -182,11 +182,11 @@
             padding-bottom: 5rem;
 
             @media screen and (max-width:1200px) {
-                gap: 5.5rem;
+                gap: 6.8rem;
             }
 
             @media screen and (max-width:990px) {
-                gap: 3.4rem;
+                gap: 5.5rem;
                 padding-bottom: 3rem;
 
             }
@@ -264,7 +264,7 @@
                         width: 100%;
                         justify-content: center;
                         align-items: center;
-                        display: none;
+                        display: none; 
                     }
 
                     div {

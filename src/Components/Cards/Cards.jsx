@@ -7,7 +7,7 @@ import card from "../../Assets/Icon.png"
 
 const Cards = () => {
     return (
-        <div className='card-container'>
+        <div className='card-container' id='team'>
             <div className="text">
                 <h2>Join the Online Quran Community to Learn, Read, and Listen.</h2>
                 <div>As one of the leading online institutes for teaching the Quran online, <br /> we offer the best educational experiences for our students and the world.</div>

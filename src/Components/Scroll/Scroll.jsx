@@ -6,11 +6,11 @@ const Scroll = () => {
     <div className="scroll-container">
         <div className="menu">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Subscribe</a>
-            <a href="#">Team</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#subscribe">Subscribe</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
         </div>
       
     </div>
