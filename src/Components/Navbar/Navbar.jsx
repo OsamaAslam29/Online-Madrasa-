@@ -3,14 +3,6 @@ import './Navbar.scss'
 import Fade from 'react-reveal/Fade';
 import logo from '../../Assets/logo.png'
 import Scroll from '../Scroll/Scroll';
-// import home from "../../Assets/thirds.png";
-
-// import home from '../../Assets/Menu/Contect.svg'
-// import about from '../../Assets/Menu/About.svg'
-// import services from '../../Assets/Menu/Services.svg'
-// import quran from '../../Assets/Menu/Quran.svg'
-// import mosque from '../../Assets/Menu/Mosque.svg'
-// import contact from '../../Assets/Menu/Phone.svg'
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
@@ -73,36 +65,30 @@ const Navbar = () => {
         <div className="nav">
 
           <div className="mobile_icon" to="/Home">
-            {/* <img src={home} alt="" /> */}
             <AiOutlineHome className="icon" />
             <div>Home</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            {/* <img src={about} alt="" /> */}
             <GiInfo className="icon" />
 
             <div style={{ marginTop: "-10px" }}>About </div>
           </div>
           <div className="mobile_icon" to="/Home">
-            {/* <img src={services} alt="" /> */}
             <BsGear className="icon" />
 
             <div style={{ marginTop: "-10px" }}>Services</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            {/* <img src={quran} alt="" /> */}
             <AiOutlineBell className="icon" />
 
             <div style={{ marginTop: "-10px" }}>Suscribe</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            {/* <img src={mosque} alt="" /> */}
             <AiOutlineTeam className="icon" />
 
             <div>Team</div>
           </div>
           <div className="mobile_icon" to="/Home">
-            {/* <img src={contact} alt="" /> */}
             <BsTelephone className="icon" />
 
             <div>Contact</div>
