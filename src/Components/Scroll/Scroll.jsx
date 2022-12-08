@@ -1,9 +1,13 @@
 import React from 'react'
 import './Scroll.scss'
+import logo from '../../Assets/logo.png'
 
 const Scroll = () => {
   return (
     <div className="scroll-container">
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
         <div className="menu">
             <a href="#">Home</a>
             <a href="#about">About</a>

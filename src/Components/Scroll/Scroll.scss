@@ -1,4 +1,8 @@
 .scroll-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
     background-color: black;
 
     @media screen and (max-width: 750px) {
@@ -11,7 +15,7 @@
         align-items: center;
 
         a {
-            padding: 30px 20px;
+            padding: 35px 20px;
             color: white;
             font-size: var(--card-heading);
 

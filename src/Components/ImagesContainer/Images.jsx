@@ -14,7 +14,7 @@ const Images = () => {
   return (
     <>
       <div className="images__main" >
-        <div className="absolute__images" id='about'>
+        <div className="absolute__images">
           <div className="large">
             <img src={large} alt="" />
             <div className="small">

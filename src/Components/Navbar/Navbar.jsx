@@ -35,8 +35,6 @@ const Navbar = () => {
     left: false,
   });
 
-
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&

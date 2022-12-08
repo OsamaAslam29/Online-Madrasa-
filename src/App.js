@@ -12,6 +12,7 @@ import Subscribe from './Components/Subscribe/Subscribe'
 function App() {
   return (
     <>
+
       <Navbar /> 
       <MainSlider />          
       <Images />
@@ -19,6 +20,7 @@ function App() {
       <Cards />
       <Contact /> 
       <Footer />
+      
     </> 
   );
 }
