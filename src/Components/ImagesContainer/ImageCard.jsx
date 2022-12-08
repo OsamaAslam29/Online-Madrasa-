@@ -50,8 +50,7 @@ const ImageCard = () => {
                 </div>
                 </Roll>
             </div>
-
-
+           <div id='services'></div>
         </div>
     )
 }

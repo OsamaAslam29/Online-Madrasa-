@@ -74,6 +74,7 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
+            <div id='contact'></div>
         </div>
     )
 }

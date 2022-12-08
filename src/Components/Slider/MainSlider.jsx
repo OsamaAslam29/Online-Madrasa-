@@ -9,8 +9,6 @@ const MainSlider = () => {
         <div className="slider__componet">
           <HomeSlider />
         </div>
-        <div id="about"></div>
-
         <div className="welcome-section">
           <Fade top>
             <h2>Welcome to Madrasa.io</h2>
@@ -18,6 +16,7 @@ const MainSlider = () => {
           </Fade>
         </div>
       </div>
+      
     </>
   )
 }

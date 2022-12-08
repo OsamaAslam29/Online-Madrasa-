@@ -76,16 +76,17 @@ const HomeSlider = () => {
           return (
             <Fade top  key={index.toString()}>
               <div className="slide_parent">
-
                 <div className="icon">
                   {data.img}
                 </div>
                 <h5>{data.heading}</h5>
               </div>
+              <div id="about"></div>
             </Fade>
           );
         })}
       </Slider>
+
     </div>
   );
 };
