@@ -35,7 +35,7 @@ const Info = () => {
                         </div>
                         <div className="card-info">
                             <h5>Email Us:</h5>
-                            <a>info@madrasa.io</a>
+                            <a href='mailto:info@madrasa.io'>info@madrasa.io</a>
                         </div>
                     </div>
                     <div className="card-data">
@@ -44,7 +44,7 @@ const Info = () => {
                         </div>
                         <div className="card-info">
                             <h5>Phone:</h5>
-                            <a>+61 000 123 4567</a>
+                            <a href='tel:610001234567'>+61 000 123 4567</a>
                         </div>
                     </div>
                 </div>

@@ -159,6 +159,9 @@
 
             .card-info {
                 line-height: 35px;
+                a{
+                    cursor: pointer;
+                }
 
                 @media screen and (max-width:990px) {
                     line-height: 20px;
