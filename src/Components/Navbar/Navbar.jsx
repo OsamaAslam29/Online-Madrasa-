@@ -12,13 +12,13 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { BsGear } from 'react-icons/bs';
 import { GiInfo } from 'react-icons/gi';
 import { AiOutlineBell } from 'react-icons/ai';
-import { AiOutlineTeam } from 'react-icons/ai';
+import { AiOutlineTeam } from 'react-icons/ai'; 
 import { BsTelephone } from 'react-icons/bs';
 
 
 
 const Navbar = () => {
-
+ 
   //  ****** Scroll Navbar ********
 
   const [showNav, setShowNav] = useState(false)
