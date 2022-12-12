@@ -145,7 +145,7 @@ li.slick-active button:before {
   }
 
   @media screen and (max-width:700px) {
-    background: url("../../Assets/Slider/Mobile.jpg") !important;
+    background: url("../../Assets/Slider/Mobile.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
